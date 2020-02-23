@@ -86,14 +86,13 @@ header {
     letter-spacing: 0.9px;
 }
 
-.nav_item:hover {
-    background-color: #d669c4;
-    text-decoration: underline;
+.nav_item:hover,
+.nav_item:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    color: #a00000;
 }
 
-.nav_item:focus {
-    background-color: #3f0836;
-}
 
 main {
     width: 100%;
@@ -263,8 +262,7 @@ main {
 }
 
 .cards_bulb {
-    margin-top: 1px;
-    margin-left: 1px;
+    margin-left: 4px;
 }
 .cards_name_bulb {
     margin-left: 85px;
