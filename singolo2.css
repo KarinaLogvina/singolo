@@ -3,3 +3,190 @@
     padding: 0;
     font-family: Lato, sans-serif;
 }
+
+ul {
+    list-style: none;
+}
+
+.wraper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio {
+    width: 100%;
+    background-color: #2D303A;
+}
+
+.portfolio_container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato Black";
+    font-weight: 700;
+    text-align: left;
+    padding-top: 27px;
+}
+
+.portfolio_description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+    color: #767E9E;
+    border: 0.7px solid ;
+    border-radius: 7px;
+    border: 1px solid #666d89;
+    margin: 10px 0 16px 0px;
+    padding: 2px 5px 2px 5px;  
+    background: #2D303A;
+}
+
+.portfolio_img {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 941px;
+}
+
+.img_item {
+    width: 221px;
+    height: 188px;
+}
+
+.img_1 {
+    background-image: url(./assets/icons/img_1.png);
+}
+
+.img_2 {
+    background-image: url(./assets/icons/img_2.png);
+}
+
+.img_3 {
+    background-image: url(./assets/icons/img_3.png);
+}
+
+.img_4 {
+    background-image: url(./assets/icons/img_4.png);
+}
+
+.img_5 {
+    background-image: url(./assets/icons/img_5.png);
+}
+
+.img_6 {
+    background-image: url(/assets/icons/img_6.png);
+}
+
+.img_7 {
+    background-image: url(./assets/icons/img_7.png);
+}
+
+.img_8 {
+    background-image: url(./assets/icons/img_8.png);
+}
+
+.img_9 {
+    background-image: url(./assets/icons/img_9.png);
+}
+
+.img_10 {
+    background-image: url(./assets/icons/img_10.png);
+}
+
+.img_11 {
+    background-image: url(./assets/icons/img_11.png);
+}
+
+.img_12 {
+    background-image: url(./assets/icons/img_12.png);
+    margin-bottom: 10px;
+}
+
+.about_us {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.about_container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.about_us_description {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+.member_board {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.member_name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.member_info {
+    width: 300px; 
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.social_icon {
+    width: 32px;
+    height: 32px;
+}
+
+.facebook {
+    background-image: url(./assets/icons/Facebook.svg);
+    color: #666D89;
+}
+
+.google {
+    background-image: url(./assets/icons/Google.svg);
+}
+
+.twitter {
+    background-image: url(./assets/icons/Twitter.svg);
+}
+
+.linkedin {
+    background-image: url(./assets/icons/LinkedIn.svg);
+}
