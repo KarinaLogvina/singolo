@@ -15,7 +15,9 @@ ul {
 
 .portfolio {
     width: 100%;
+    height: 870px;
     background-color: #2D303A;
+    box-shadow: inset 0 -6px 0 0 rgba(50,55,70,1);
 }
 
 .portfolio_container {
@@ -30,7 +32,9 @@ ul {
     font-family: "Lato Black";
     font-weight: 700;
     text-align: left;
-    padding-top: 27px;
+    letter-spacing: 0.3px;
+    padding-top: 69px;
+    margin-left: 39.4px;
 }
 
 .portfolio_description {
@@ -39,18 +43,49 @@ ul {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
+    letter-spacing: -0.2px;
     text-align: left;
+    margin: 27px 0 0 40px;
 }
 
-button {
+.portfolio_tags {
+    margin: 9px 0px 0px 41px;
+}
+
+.tag {
     cursor: pointer;
-    color: #767E9E;
-    border: 0.7px solid ;
-    border-radius: 7px;
-    border: 1px solid #666d89;
-    margin: 10px 0 16px 0px;
-    padding: 2px 5px 2px 5px;  
-    background: #2D303A;
+    font-size: 12px;
+    color: #767e9e;
+    border-radius: 4px;
+    font-family: "Lato", sans-serif;
+    border: 0.7px solid #767e9e;
+    background-color: #2D303A;
+    padding: 1px 7px 4.7px 7px;
+    margin-right: 11.3px;
+}
+
+.tag.web {
+    margin-left: -5px;
+    padding-right: 6.2px;
+}
+
+.tag.design {
+    margin-left: -6px;
+    padding-right: 5px;
+}
+
+.tag.artwork {
+    margin-left: -5px;
+}
+
+.tag.all    {
+    color: #dedede;
+    border-color: #dedede;
+}
+
+.tag:hover {
+    color: #dedede;
+    border-color: #dedede;
 }
 
 .portfolio_img {
@@ -58,62 +93,90 @@ button {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 600px;
-    width: 941px;
+    height: 601.5px;
+    width: 961px;
+    margin: 18.9px 0 73px 40px;
 }
 
 .img_item {
-    width: 221px;
-    height: 188px;
+    width: 220px;
+    height: 187px;
 }
 
 .img_1 {
     background-image: url(./assets/icons/img_1.png);
+    background-position: -7.6px -11.3px;
 }
 
 .img_2 {
     background-image: url(./assets/icons/img_2.png);
+    margin-bottom: 2px;
+    background-position: -10px -16px;
 }
 
 .img_3 {
     background-image: url(./assets/icons/img_3.png);
+    margin: -1px 0 1px 0;
+    background-position: -16px -2px;
 }
 
 .img_4 {
     background-image: url(./assets/icons/img_4.png);
+    background-position: -82px -43px;
+    margin-left: 1px;
 }
 
 .img_5 {
     background-image: url(./assets/icons/img_5.png);
+    background-position: -16px -4px;
+    margin-bottom: 1px;
+    margin-left: 1px;
 }
 
 .img_6 {
     background-image: url(/assets/icons/img_6.png);
+    background-position: -141px -113px;
+    margin-bottom: 1px;
+    margin-left: 1px;
 }
 
 .img_7 {
     background-image: url(./assets/icons/img_7.png);
+    background-position: -262px -1px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .img_8 {
     background-image: url(./assets/icons/img_8.png);
+    background-position: -31px -39px;
+    margin-bottom: 1px;
 }
 
 .img_9 {
     background-image: url(./assets/icons/img_9.png);
+    background-position: 270px 237px;
+    margin-bottom: 1px;
 }
 
 .img_10 {
     background-image: url(./assets/icons/img_10.png);
+    background-position: -24px -2px;
+    margin-left: -1px;
 }
 
 .img_11 {
     background-image: url(./assets/icons/img_11.png);
+    background-position: -24px -32px;
+    /* margin-bottom: 1px; */
+    margin-left: -1px;
 }
 
 .img_12 {
     background-image: url(./assets/icons/img_12.png);
-    margin-bottom: 10px;
+    background-position: -37px -60px;
+    margin-bottom: 1px;
+    padding-left: -5px;
 }
 
 .about_us {
