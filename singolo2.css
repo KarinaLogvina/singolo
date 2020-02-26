@@ -17,7 +17,7 @@ ul {
     width: 100%;
     height: 870px;
     background-color: #2D303A;
-    box-shadow: inset 0 -6px 0 0 rgba(50,55,70,1);
+    box-shadow: inset 0 -6px 0 0 rgba(50, 55, 70, 1);
 }
 
 .portfolio_container {
@@ -25,7 +25,7 @@ ul {
     margin: 0 auto;
 }
 
-.title {
+.title_portfolio {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -78,7 +78,7 @@ ul {
     margin-left: -5px;
 }
 
-.tag.all    {
+.tag.all {
     color: #dedede;
     border-color: #dedede;
 }
@@ -189,6 +189,17 @@ ul {
     margin: 0 auto;
 }
 
+.title_about_us {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato Black";
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: -0.1px;
+    padding-top: 68.2px;
+}
+
 .about_us_description {
     width: 940px;
     height: 57px;
@@ -200,10 +211,16 @@ ul {
     text-align: left;
 }
 
+.member {
+    width: 300px;
+}
+
 .member_board {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .member_name {
@@ -216,7 +233,7 @@ ul {
 }
 
 .member_info {
-    width: 300px; 
+    width: 300px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
