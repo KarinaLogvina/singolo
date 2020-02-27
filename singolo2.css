@@ -236,6 +236,7 @@ ul {
     font-size: 18px;
     margin: 17px 0 0 0;
     line-height: 18px;
+    text-overflow: ellipsis;
     color: #666d89;
     font-family: "Lato Black";
     font-weight: 900;
