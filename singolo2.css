@@ -145,6 +145,7 @@ ul {
     background-position: -262px -1px;
     margin-left: 1px;
     margin-right: 1px;
+    overflow: hidden;
 }
 
 .img_8 {
@@ -177,11 +178,14 @@ ul {
     background-position: -37px -60px;
     margin-bottom: 1px;
     padding-left: -5px;
+    overflow: hidden;
 }
 
 .about_us {
     width: 100%;
     background-color: #F2F2F2;
+    height: 734px;
+    box-shadow: inset 0 -6px 0 0 rgba(225, 225, 225, 0);
 }
 
 .about_container {
@@ -196,23 +200,27 @@ ul {
     font-family: "Lato Black";
     font-weight: 700;
     text-align: left;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.2px;
     padding-top: 68.2px;
+    padding-left: 41px;
 }
 
 .about_us_description {
     width: 940px;
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
     text-align: left;
+    letter-spacing: -0.1px;
+    margin: 27px 0 0 41px;
 }
 
 .member {
     width: 300px;
+    height: 515px;
+    overflow: hidden;
 }
 
 .member_board {
@@ -221,15 +229,23 @@ ul {
     flex-direction: row;
     width: 940px;
     margin: 0 auto;
+    margin-top: 45px;
 }
 
 .member_name {
     font-size: 18px;
+    margin: 17px 0 0 0;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato Black";
     font-weight: 900;
     text-align: left;
+}
+
+.member_photo {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
 }
 
 .member_info {
@@ -240,6 +256,7 @@ ul {
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+    margin-top: 10px;
 }
 
 .socials {
@@ -247,11 +264,14 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
+    margin-top: 21px;
+    width: 153px;
+    justify-content: space-between;
 }
 
 .social_icon {
-    width: 32px;
-    height: 32px;
+    width: 33px;
+    height: 33px;
 }
 
 .facebook {
