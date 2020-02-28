@@ -91,13 +91,16 @@ ul {
 .portfolio_img {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 601.5px;
-    width: 961px;
-    margin: 18.9px 0 73px 40px;
+    height: 601px;
+    width: 940px;
+    margin: 19px 0px 0 40px;
 }
-
+.portfolio_column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .img_item {
     width: 220px;
     height: 187px;
@@ -110,75 +113,57 @@ ul {
 
 .img_2 {
     background-image: url(./assets/icons/img_2.png);
-    margin-bottom: 2px;
     background-position: -10px -16px;
 }
 
 .img_3 {
     background-image: url(./assets/icons/img_3.png);
-    margin: -1px 0 1px 0;
     background-position: -16px -2px;
 }
 
 .img_4 {
     background-image: url(./assets/icons/img_4.png);
     background-position: -82px -43px;
-    margin-left: 1px;
 }
 
 .img_5 {
     background-image: url(./assets/icons/img_5.png);
     background-position: -16px -4px;
-    margin-bottom: 1px;
-    margin-left: 1px;
 }
 
 .img_6 {
-    background-image: url(/assets/icons/img_6.png);
+    background-image: url(./assets/icons/img_6.png);
     background-position: -141px -113px;
-    margin-bottom: 1px;
-    margin-left: 1px;
 }
 
 .img_7 {
     background-image: url(./assets/icons/img_7.png);
-    background-position: -262px -1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    overflow: hidden;
+    background-position: -261px -1px;
 }
 
 .img_8 {
     background-image: url(./assets/icons/img_8.png);
     background-position: -31px -39px;
-    margin-bottom: 1px;
 }
 
 .img_9 {
     background-image: url(./assets/icons/img_9.png);
     background-position: 270px 237px;
-    margin-bottom: 1px;
 }
 
 .img_10 {
     background-image: url(./assets/icons/img_10.png);
     background-position: -24px -2px;
-    margin-left: -1px;
 }
 
 .img_11 {
     background-image: url(./assets/icons/img_11.png);
     background-position: -24px -32px;
-    /* margin-bottom: 1px; */
-    margin-left: -1px;
 }
 
 .img_12 {
     background-image: url(./assets/icons/img_12.png);
-    background-position: -37px -60px;
-    margin-bottom: 1px;
-    padding-left: -5px;
-    overflow: hidden;
+    background-position: -36px -60px;
 }
 
 .about_us {
