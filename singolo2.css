@@ -264,6 +264,11 @@ ul {
     height: 34px;
 }
 
+.social_icon:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
 .facebook {
     background-image: url(./assets/icons/Facebook.svg);
     color: #666D89;
