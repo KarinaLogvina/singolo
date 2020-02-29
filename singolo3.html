@@ -28,11 +28,38 @@
                             nibh.
                             Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
                             faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                        <ui>
-                            <li class="location"></li>
-                            <li class="tel"></li>
-                            <li class="email"></li>
-                        </ui>
+                        <form action="/app.rs.school">
+                            <ul>
+                                <li>
+                                    <input type="text" name="location" id="location">
+                                </li>
+                                <li>
+                                    <input type="tel" name="phone" id="phone">
+                                </li>
+                                <li>
+                                    <input type="email" name="email" id="email">
+                                    <label for="email">info@singolo.com</label>
+                                </li>
+                            </ul>
+                            <ui>
+                                <li class="name">
+                                    <input type="text" name="name" id="name" placeholder="Name (Required)">
+                                </li>
+                                <li class="email">
+                                    <input type="email" name="email" placeholder="Email (Required)">
+                                </li>
+                                <li class="subject">
+                                    <input type="text" name="subject" placeholder="Subject">
+                                </li>
+                                <li class="text-area">
+                                    <textarea name="description" id="description" cols="30" rows="10"
+                                        placeholder="Describe your ptoject detail..."></textarea>
+                                </li>
+                                <li class="submit">
+                                    <input type="button" value="Submit">
+                                </li>
+                            </ui>
+                        </form>
                     </div>
                 </div>
             </div>
