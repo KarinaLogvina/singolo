@@ -234,6 +234,10 @@ ul {
     overflow: hidden;
 }
 
+.center  {
+    width: 302px;
+}
+
 .member_info {
     width: 300px;
     font-size: 12px;
