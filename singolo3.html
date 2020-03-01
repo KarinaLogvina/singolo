@@ -21,45 +21,43 @@
                     dapibus,
                     tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="form_section">
-                    <div class="forma"></div>
-                    <div class="information">
-                        <h3 class="information_title">Contact information</h3>
-                        <p class="informaion_description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
-                            nibh.
-                            Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
-                            faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                        <form action="/app.rs.school">
-                            <ul>
-                                <li>
-                                    <input type="text" name="location" id="location">
+                    <div class="feedback">
+                        <div class="feedback_form">
+                            <form action="#">
+                                <fieldset>
+                                    <input type="text" name="name" id="name" placeholder="Name (Required)" required>
+                                    <input type="email" name="email" placeholder="Email (Required)" required>
+                                    <input type="text" name="subject" placeholder="Subject">
+                                    <textarea name="description" id="description" cols="30" rows="10"
+                                        placeholder="Describe your ptoject detail...">
+                                    </textarea>
+                                    <button>Submit</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="contact_information">
+                            <h3 class="information_title">Contact information</h3>
+                            <p class="informaion_description">Quisque hendrerit purus dapibus, ornare nibh vitae,
+                                viverra
+                                nibh.
+                                Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor
+                                luctus
+                                faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                            <ul class="contacts">
+                                <li class="adress contact_item">
+                                    <img src="./assets/icons/contact_location.svg" alt="location">
+                                    <a href="#">Elm St. 14/05 Lost City</a>
                                 </li>
-                                <li>
-                                    <input type="tel" name="phone" id="phone">
+                                <li class="phone contact_item">
+                                    <img src="./assets/icons/contact_phone.svg" alt="phone">
+                                    <a href="tel:+035283318635">03528 331 86 35</a>
                                 </li>
-                                <li>
-                                    <input type="email" name="email" id="email">
-                                    <label for="email">info@singolo.com</label>
+                                <li class="email contact_item">
+                                    <img src="./assets/icons/contact_mail.svg" alt="mail">
+                                    <a href="mailto:info@singolo.com">info@singolo.com</a>
                                 </li>
                             </ul>
-                            <ui>
-                                <li class="name">
-                                    <input type="text" name="name" id="name" placeholder="Name (Required)">
-                                </li>
-                                <li class="email">
-                                    <input type="email" name="email" placeholder="Email (Required)">
-                                </li>
-                                <li class="subject">
-                                    <input type="text" name="subject" placeholder="Subject">
-                                </li>
-                                <li class="text-area">
-                                    <textarea name="description" id="description" cols="30" rows="10"
-                                        placeholder="Describe your ptoject detail..."></textarea>
-                                </li>
-                                <li class="submit">
-                                    <input type="button" value="Submit">
-                                </li>
-                            </ui>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,21 +65,23 @@
     </div>
 </body>
 <footer>
-    <p>©Copyright 2013</p>
-    <ul class="socials">
-        <li class="social_icon facebook">
-            <a href="#" target="_blank"></a>
-        </li>
-        <li class="social_icon google">
-            <a href="#" target="_blank"></a>
-        </li>
-        <li class="social_icon twitter">
-            <a href="#" target="_blank"></a>
-        </li>
-        <li class="social_icon linkedin">
-            <a href="#" target="_blank"></a>
-        </li>
-    </ul>
+    <div class="footer_content">
+        <p class="copyright">©Copyright 2013</p>
+        <ul class="socials">
+            <li class="social_icon facebook">
+                <a href="#" target="_blank"></a>
+            </li>
+            <li class="social_icon google">
+                <a href="#" target="_blank"></a>
+            </li>
+            <li class="social_icon twitter">
+                <a href="#" target="_blank"></a>
+            </li>
+            <li class="social_icon linkedin">
+                <a href="#" target="_blank"></a>
+            </li>
+        </ul>
+    </div>
 </footer>
 
 </html>
