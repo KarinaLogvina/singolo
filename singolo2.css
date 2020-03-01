@@ -101,9 +101,17 @@ ul {
     justify-content: space-between;
     flex-direction: column;
 }
+.portfolio_column:nth-child(n+5) {
+    display: none;
+}
+
 .img_item {
     width: 220px;
     height: 187px;
+}
+
+.img_item:nth-child(n+4) {
+    display: none;
 }
 
 .img_1 {
@@ -234,6 +242,10 @@ ul {
     overflow: hidden;
 }
 
+.center  {
+    width: 302px;
+}
+
 .member_info {
     width: 300px;
     font-size: 12px;
@@ -258,6 +270,11 @@ ul {
 .social_icon {
     width: 34px;
     height: 34px;
+}
+
+.social_icon:hover {
+    cursor: pointer;
+    opacity: 0.3;
 }
 
 .facebook {
