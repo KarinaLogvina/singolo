@@ -101,9 +101,17 @@ ul {
     justify-content: space-between;
     flex-direction: column;
 }
+.portfolio_column:nth-child(n+5) {
+    display: none;
+}
+
 .img_item {
     width: 220px;
     height: 187px;
+}
+
+.img_item:nth-child(n+4) {
+    display: none;
 }
 
 .img_1 {
