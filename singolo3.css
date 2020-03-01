@@ -107,6 +107,7 @@ footer {
     height: 76px;
     background-color: #2D303A;
 }
+
 .footer_content {
     display: flex;
     justify-content: space-between;
