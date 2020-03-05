@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 11" width="7" height="11">
+	<defs>
+		<image width="50" height="80" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA4MSIgd2lkdGg9IjUwIiBoZWlnaHQ9IjgxIj4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMNTAgMEw1MCA4MEwwIDgwWiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICNmMGQ4ZDl9IAoJPC9zdHlsZT4KCTxnIGlkPSJQYWdlIDEiIGNsaXAtcGF0aD0idXJsKCNjcDEpIj4KCQk8cGF0aCBpZD0iUGF0aCAxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzaHAwIiBkPSJNNTAgMjVDNTAgNDguODcgMjUgODAgMjUgODBDMjUgODAgMCA0OC44NyAwIDI1QzAgMTEuMTkgMTEuMTkgMCAyNSAwQzM4LjgxIDAgNTAgMTEuMTkgNTAgMjVaTTM4LjUgMjUuM0MzOC41IDE3Ljg0IDMyLjQ1IDExLjggMjUgMTEuOEMxNy41NCAxMS44IDExLjUgMTcuODQgMTEuNSAyNS4zQzExLjUgMzIuNzYgMTcuNTQgMzguOCAyNSAzOC44QzMyLjQ1IDM4LjggMzguNSAzMi43NiAzOC41IDI1LjNaIiAvPgoJPC9nPgo8L3N2Zz4="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Get a Quote">
+		<g id="Contact Information">
+			<use id="location" href="#img1" transform="matrix(0.14,0,0,0.138,0,0)"/>
+		</g>
+	</g>
+</svg>
