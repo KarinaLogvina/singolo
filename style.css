@@ -98,10 +98,9 @@ header {
 .nav_item:hover,
 .nav_item:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-    color: #a00000;
+    text-decoration: underline;
+    color: #f48c8f;
 }
-
 
 main {
     width: 100%;
@@ -222,6 +221,7 @@ main {
     font-family: Lato, sans-serif;
     font-weight: 300;
     text-align: left;
+    overflow: hidden;
     letter-spacing: -0.04px;
 }
 
@@ -370,12 +370,15 @@ ul {
 
 .portfolio_description {
     font-size: 18px;
+    width: 690px;
+    height: 31px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
     letter-spacing: -0.2px;
-    text-align: left;
+    text-align: justify;
+    overflow: hidden;
     margin: 27px 0 0 40px;
 }
 
@@ -412,11 +415,13 @@ ul {
 .tag.all {
     color: #dedede;
     border-color: #dedede;
+    border-width: 1px;
 }
 
 .tag:hover {
     color: #dedede;
     border-color: #dedede;
+    text-decoration: underline;
 }
 
 .portfolio_img {
@@ -425,7 +430,8 @@ ul {
     flex-wrap: wrap;
     height: 601px;
     width: 940px;
-    margin: 20px 0px 0 40px;
+    margin: 18px 0px 0 40px;
+    border-width: 1px;
 }
 .portfolio_column {
     display: flex;
@@ -536,7 +542,6 @@ ul {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
     letter-spacing: -0.1px;
     margin: 27px 0 0 41px;
     text-align: justify
@@ -560,12 +565,15 @@ ul {
 .member_name {
     font-size: 18px;
     margin: 17px 0 0 0;
+    width: 300px;
     line-height: 18px;
     text-overflow: ellipsis;
     color: #666d89;
+    overflow: hidden;
+    white-space: nowrap;
     font-family: "Lato Black";
     font-weight: 900;
-    text-align: left;
+    height: 20px;
 }
 
 .member_photo {
@@ -585,8 +593,8 @@ ul {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
-    margin-top: 10px;
+    text-align: justify;
+    margin-top: 8px;
 }
 
 .socials {
@@ -597,10 +605,6 @@ ul {
     margin-top: 21px;
     width: 153px;
     justify-content: space-between;
-}
-
-.member.socials {
-    margin-left: -44px;
 }
 
 .social_icon {
@@ -646,7 +650,7 @@ ul {
     text-align: left;
     margin: 26px 0 0 0;
     letter-spacing: -0.1px;
-    text-align: justify
+    text-align: justify;
 }
 
 .feedback {
@@ -666,6 +670,10 @@ ul {
     list-style: none;
     margin: 20px 0 0 0;
 }
+
+.contact_item:hover {
+    text-decoration: underline;
+}
 .contact_information {
     width: 322px;
     float: left;
@@ -673,9 +681,12 @@ ul {
 }
 
 input.email,
+input.name,
 .subject,
 .textarea {
     margin-top: 16px;
+    font-family: "Lato", sans-serif;
+    color: #f0d8d9;
 }
 
 .information_title {
@@ -696,10 +707,9 @@ input.email,
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
     text-decoration: none;
     word-wrap: break-word;
-    text-align: justify
+    text-align: justify;
 }
 
 .informaion_description {
@@ -784,17 +794,6 @@ footer {
     width: 940px;
 }
 
-.socials {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    margin-top: 21px;
-    width: 153px;
-    justify-content: space-between;
-    padding-left: 44px;
-    list-style: none;
-}
 
 .social_icon {
     width: 34px;
@@ -854,16 +853,3 @@ li.email {
     background-image: url(./assets/icons/LinkedIn.svg);
 }
 
-@font-face {
-    font-family: Lato;
-    src: url(./assets/fonts/Lato-Light.ttf);
-}
-@font-face {
-    font-family: Lato-Heavy;
-    src: url(./assets/fonts/Lato-Heavy.ttf);
-}
-
-@font-face {
-    font-family: Lato-bold;
-    src: url(./assets/fonts/Lato-Bold.ttf);
-}
