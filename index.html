@@ -260,12 +260,11 @@
                         <div class="feedback">
                             <div class="feedback_form">
                                 <form action="#">
-                                    <input class="name" type="text" name="name" id="name" placeholder="Name (Required)" required>
-                                    <input class="email" type="email" name="email" placeholder="Email (Required)"
-                                        required>
-                                    <input class="subject" type="text" name="subject" placeholder="Subject">
+                                    <input class="name" type="text" name="name" id="name" placeholder="Name (Required)" maxlength="30" required>
+                                    <input class="email" type="email" name="email" placeholder="Email (Required)" maxlength="30" required>
+                                    <input class="subject" type="text" name="subject" placeholder="Subject" maxlength="30">
                                     <textarea class="textarea" name="description" id="description" cols="30" rows="10"
-                                        placeholder="Describe your ptoject in detail..."></textarea>
+                                        placeholder="Describe your ptoject in detail..." maxlength="500"></textarea>
                                     <button class="button">Submit</button>
                                 </form>
                             </div>

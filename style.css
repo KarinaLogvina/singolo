@@ -74,7 +74,7 @@ header {
     left: -13px;
     font-weight: 700;
     font-size: 19px;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     color: #494e62;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .nav_item {
-    font-family: Lato-Heavy, sans-serif;
+    font-family: "Lato-bold", sans-serif;
     font-size: 10.4px;
     font-weight: 700;
     color: #FFFFFF;
@@ -98,7 +98,6 @@ header {
 .nav_item:hover,
 .nav_item:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    text-decoration: underline;
     color: #f48c8f;
 }
 
@@ -206,7 +205,7 @@ main {
     font-size: 30.5px;
     line-height: 18px;
     color: #666d89;
-    font-family: Lato-bold, sans-serif;
+    font-family: "Lato Black", sans-serif;
     letter-spacing: -0.08px;
     text-align: left;
 }
@@ -218,7 +217,7 @@ main {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
     text-align: left;
     overflow: hidden;
@@ -251,7 +250,7 @@ main {
     line-height: 18px;
     color: #666d89;
     letter-spacing: 0px;
-    font-family: Lato-bold, sans-serif;
+    font-family: "Lato-bold", sans-serif;
     text-align: left;
 }
 
@@ -261,7 +260,7 @@ main {
     margin-top: 10px;
     letter-spacing: 0.1px;
     color: #767e9e;
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
     text-align: justify;
 }
 
@@ -515,7 +514,7 @@ ul {
     width: 100%;
     background-color: #F2F2F2;
     height: 734px;
-    box-shadow: inset 0 -6px 0 0 rgba(225, 225, 225, 0);
+    box-shadow: inset 0 -6px 0 0 rgba(255, 255, 255, 1)
 }
 
 .about_container {
@@ -666,6 +665,67 @@ ul {
     width: 630px;
 }
 
+form input {
+    width: 604px;
+    height: 38px;
+    padding-left: 15px;  
+    border-radius: 5px;
+    background-color: #d6564f;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+form input::placeholder {
+    color: #f48c8f;
+}
+
+textarea {
+    width: 604px;
+    height: 195px;
+    padding-top: 7px;
+    padding-left: 15px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #d6564f;
+    resize: none;
+    text-align: justify;
+    margin: 17px 0 0 0;
+}
+
+.textarea::placeholder {
+    color: #f48c8f;
+}
+
+.button {
+    background-color: rgb(218, 58, 49);
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-family: "Lato Black";
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .contacts {
     list-style: none;
     margin: 20px 0 0 0;
@@ -678,15 +738,6 @@ ul {
     width: 322px;
     float: left;
     margin: 14px 0 0 21px;
-}
-
-input.email,
-input.name,
-.subject,
-.textarea {
-    margin-top: 16px;
-    font-family: "Lato", sans-serif;
-    color: #f0d8d9;
 }
 
 .information_title {
@@ -716,68 +767,6 @@ input.name,
     margin: 10px 0 0 0;
 }
 
-form input {
-    background-image: none;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    margin: 14px 0 0 0;
-    outline: 0;
-    width: 619px;
-    height: 38px;
-    border-radius: 5px;
-    background-color: #D6564F;
-    text-indent: 14px;
-    letter-spacing: 0.1px;
-}
-
-textarea {
-    width: 619px;
-    height: 202px;
-    border-radius: 5px;
-    border: 0;
-    background-color: #D6564F;
-    color: inherit;
-    font: inherit;
-    margin: 14px 0 0 0;
-    outline: 0;
-    text-indent: 15px;
-    resize: none;
-}
-
-input::-webkit-input-placeholder,
-textarea::placeholder {
-    font-size: 12px;
-    line-height: 22px;
-    color: #f48c8f;
-    font-family: "Lato";
-    font-weight: 400;
-    text-align: left;
-    text-indent: 15px;
-    padding-top: 7px;
-}
-
-.button {
-    background-color: rgb(218, 58, 49);
-    font-size: 12px;
-    line-height: 22px;
-    color: #f0d8d9;
-    border: 0;
-    border-radius: 5px;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    font-family: "Lato Black";
-    font-weight: 400;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.button:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
 footer {
     width: 100%;
     height: 76px;
@@ -786,6 +775,7 @@ footer {
 
 .copyright {
     margin: 27px 0 0 3px;
+    color: #666D89;
 }
 .footer_content {
     display: flex;
@@ -793,7 +783,6 @@ footer {
     margin: 0 auto;
     width: 940px;
 }
-
 
 .social_icon {
     width: 34px;
