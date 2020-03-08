@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Lato, sans-serif;
+    border: 0;
 }
 
 a {
@@ -16,6 +16,15 @@ header {
     position: relative;
     z-index: 10;
     box-shadow: 0px 6px 0px 0px rgba(50,55,70,1);
+}
+
+.wraper {
+    display: flex;
+    width: 1020px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .header-content {
@@ -33,16 +42,13 @@ header {
 
 .logo_name {
     font-size: 24.7px;
-    line-height: 6px;
-    color: #ffffff;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    text-align: left;
+    line-height: 7px;
     font-family: "Lato Black", sans-serif;
     text-transform: uppercase;
     margin-left: 7.5px;
     margin-top: 40px;
-    letter-spacing: 0px;
+    letter-spacing: -0.7px;
+    color: #F2F2F2;
 }
 
 .logo_name::after {
@@ -174,16 +180,17 @@ main {
     width: 1020px;
     margin: 0 auto;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .vertical {
-    margin-top: 4.4%;
-    margin-left: 10.8%;
+    margin-top: 44px;
+    margin-left: 110px;
 }
 
 .horizontal {
-    margin-top: 14.1%;
-    margin-right: 8.6%;
+    margin-top: 143px;
+    margin-right: 88px;
 }
 
 .services-block {
@@ -418,7 +425,7 @@ ul {
     flex-wrap: wrap;
     height: 601px;
     width: 940px;
-    margin: 19px 0px 0 40px;
+    margin: 20px 0px 0 40px;
 }
 .portfolio_column {
     display: flex;
@@ -517,7 +524,7 @@ ul {
     font-family: "Lato Black";
     font-weight: 700;
     text-align: left;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.4px;
     padding-top: 68.2px;
     padding-left: 41px;
 }
@@ -532,6 +539,7 @@ ul {
     text-align: left;
     letter-spacing: -0.1px;
     margin: 27px 0 0 41px;
+    text-align: justify
 }
 
 .member {
@@ -591,6 +599,10 @@ ul {
     justify-content: space-between;
 }
 
+.member.socials {
+    margin-left: -44px;
+}
+
 .social_icon {
     width: 34px;
     height: 34px;
@@ -634,6 +646,7 @@ ul {
     text-align: left;
     margin: 26px 0 0 0;
     letter-spacing: -0.1px;
+    text-align: justify
 }
 
 .feedback {
@@ -686,6 +699,7 @@ input.email,
     text-align: left;
     text-decoration: none;
     word-wrap: break-word;
+    text-align: justify
 }
 
 .informaion_description {
