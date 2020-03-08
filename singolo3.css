@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wraper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.quote {
+    width: 100%;
+    background-color: #F06C64;
+    height: 654px;
+    box-shadow: inset 0 -6px 0 0 rgba(234, 103, 107, 1);
+}
+
+.quote_container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.quote_title {
+    font-size: 30px;
+    line-height: 20px;
+    color: #f0d8d9;
+    font-family: "Lato Black";
+    font-weight: 900;
+    text-align: left;
+    padding: 67px 0 0 0;
+    letter-spacing: -0.3px;
+}
+
+.quote_description {
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin: 26px 0 0 0;
+    letter-spacing: -0.1px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    width: 952px;
+    margin: 33px 0 0 0;
+}
+
+.feedback_form {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+}
+
+.contacts {
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+.contact_information {
+    width: 322px;
+    float: left;
+    margin: 14px 0 0 21px;
+}
+
+input.email,
+.subject,
+.textarea {
+    margin-top: 16px;
+}
+
+.information_title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato Black";
+    font-weight: 900;
+    text-align: left;
+}
+
+.informaion_description,
+.contact_item,
+a,
+.copyright
+ {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.informaion_description {
+    margin: 10px 0 0 0;
+}
+
+form input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 14px 0 0 0;
+    outline: 0;
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #D6564F;
+    text-indent: 14px;
+    letter-spacing: 0.1px;
+}
+
+textarea {
+    width: 619px;
+    height: 202px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #D6564F;
+    color: inherit;
+    font: inherit;
+    margin: 14px 0 0 0;
+    outline: 0;
+    text-indent: 15px;
+    resize: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-indent: 15px;
+    padding-top: 7px;
+}
+
+.button {
+    background-color: rgb(218, 58, 49);
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-family: "Lato Black";
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 76px;
+    background-color: #2D303A;
+}
+
+.copyright {
+    margin: 27px 0 0 3px;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 21px;
+    width: 153px;
+    justify-content: space-between;
+    padding-left: 44px;
+    list-style: none;
+}
+
+.social_icon {
+    width: 34px;
+    height: 34px;
+}
+
+.social_icon:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.adress {
+    background-image: url(./assets/icons/location_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 3px 5px;
+}
+.phone {
+    background-image: url(./assets/icons/phone_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+li.email {
+    background-image: url(./assets/icons/email_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    margin: 0 0 0 0;
+}
+
+.location {
+    margin: 0 0 0 23px;
+    letter-spacing: -0.1px;
+}
+
+.phone_link {
+    margin: 0 0 0 23px;
+    letter-spacing: -0.2px;
+}
+
+.email_link {
+    margin: 0 0 0 23px;
+    letter-spacing: 0.1px;
+}
+
+.facebook {
+    background-image: url(./assets/icons/Facebook.svg);
+}
+
+.google {
+    background-image: url(./assets/icons/Google.svg);
+}
+
+.twitter {
+    background-image: url(./assets/icons/Twitter.svg);
+}
+
+.linkedin {
+    background-image: url(./assets/icons/LinkedIn.svg);
+}
