@@ -13,17 +13,17 @@
 <body>
     <header>
         <div class="wraper">
-            <div class="header-content">
+            <div class="header-content" id="home">
                 <article class="logo">
                     <h1 class="logo_name"><a href="#">Singolo</a></h1>
                 </article>
                 <nav class="navbar">
-                    <ul class="nav_menu">
-                        <li class="nav_item"><a href="#">HOME</a></li>
-                        <li class="nav_item"><a href="#">SERVICES</a></li>
-                        <li class="nav_item"><a href="#">PORTFOLIO</a></li>
-                        <li class="nav_item"><a href="#">ABOUT</a></li>
-                        <li class="nav_item"><a href="#">CONTACT</a></li>
+                    <ul class="nav_menu" id="menu">
+                        <li class="nav_item"><a href="#home">HOME</a></li>
+                        <li class="nav_item"><a href="#services">SERVICES</a></li>
+                        <li class="nav_item"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav_item"><a href="#about-us">ABOUT</a></li>
+                        <li class="nav_item"><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,13 +32,13 @@
     <main>
         <article class="carusel">
             <div class="wraper">
-                <div class="item-container">
-                    <div class="item active">
+                <div class="slider-container">
+                    <div class="slider active">
                         <div class="description">
-                            <div class="vertical"><img src="./assets/icons/iPhone Vertical.png" alt="vertical phone">
+                            <div class="vertical" id="vertical"><img src="./assets/icons/iphone_vert_fill.png" alt="vertical phone" id="vertical-fill">
                             </div>
-                            <div class="horizontal"><img src="./assets/icons/iPhone Horizontal.png"
-                                    alt="vertical phone">
+                            <div class="horizontal" id="horizontal"><img src="./assets/icons/iphone_horiz_fill.png"
+                                    alt="vertical phone" id="horizontal-fill">
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,11 @@
                 </div>
             </div>
         </article>
+
         <article class="services-block">
             <div class="wraper">
                 <div class="services-content">
+                    <a class="anchor" id="services"></a>
                     <h2 class="services_title">Our Services</h2>
                     <p class="services_description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                         Duis
@@ -128,42 +130,38 @@
         <article class="portfolio">
             <div class="wraper">
                 <div class="portfolio_container">
+                    <a class="anchor" id="portfolio"></a>
                     <h2 class="title_portfolio">Portfolio</h2>
                     <p class="portfolio_description">
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                     </p>
-                    <div class="portfolio_tags">
+                    <div class="portfolio_tags" id="tags">
                         <button class="tag all">All</button>
                         <button class="tag web">Web Design</button>
                         <button class="tag design">Graphic Design</button>
                         <button class="tag artwork">Artwork</button>
                     </div>
                     <div class="portfolio_img">
-                        <div class="column_one portfolio_column">
-                            <div class="img_item img_1"></div>
-                            <div class="img_item img_2"></div>
-                            <div class="img_item img_3"></div>
-                        </div>
-                        <div class="column_two portfolio_column">
-                            <div class="img_item img_4"></div>
-                            <div class="img_item img_5"></div>
-                            <div class="img_item img_6"></div>
-                        </div>
-                        <div class="column_three portfolio_column">
-                            <div class="img_item img_7"></div>
-                            <div class="img_item img_8"></div>
-                            <div class="img_item img_9"></div>
-                        </div>
-                        <div class="column_four portfolio_column">
-                            <div class="img_item img_10"></div>
-                            <div class="img_item img_11"></div>
-                            <div class="img_item img_12"></div>
-                        </div>
+                        <ul class="imges" id="portfolio_images">
+                            <li class="img_item img_1"></li>
+                            <li class="img_item img_2"></li>
+                            <li class="img_item img_3"></li>
+                            <li class="img_item img_4"></li>
+                            <li class="img_item img_5"></li>
+                            <li class="img_item img_6"></li>
+                            <li class="img_item img_7"></li>
+                            <li class="img_item img_8"></li>
+                            <li class="img_item img_9"></li>
+                            <li class="img_item img_10"></li>
+                            <li class="img_item img_11"></li>
+                            <li class="img_item img_12"></li>
+                        </ul>
                     </div>
                 </div>
         </article>
         <article class="about_us">
             <div class="about_container">
+                <a class="anchor" id="about-us"></a>
                 <h2 class="title_about_us">About Us</h2>
                 <p class="about_us_description">
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
@@ -242,8 +240,6 @@
             </div>
             </div>
         </article>
-
-
         <article class="quote">
             <div class="wraper">
                 <div class="quote_container">
@@ -259,16 +255,28 @@
                     <div class="form_section">
                         <div class="feedback">
                             <div class="feedback_form">
-                                <form action="#">
+                                <form action="#" id="form">
                                     <input class="name" type="text" name="name" id="name" placeholder="Name (Required)" maxlength="30" required>
                                     <input class="email" type="email" name="email" placeholder="Email (Required)" maxlength="30" required>
                                     <input class="subject" type="text" name="subject" placeholder="Subject" maxlength="30">
                                     <textarea class="textarea" name="description" id="description" cols="30" rows="10"
                                         placeholder="Describe your ptoject in detail..." maxlength="500"></textarea>
-                                    <button class="button">Submit</button>
+                                    <button class="button" id="submit_btn">Submit</button>
                                 </form>
                             </div>
+                            <div id="message_block" class="hidden">
+                                <div id="message" class="message">
+                                    <p>Text: <span id="result"></span></p>
+                                    <br>
+                                    <p>Teмa: <span id="theme"></span> </p>
+                                    <br>
+                                    <p>Описание:  <span id="description"></span> </p>
+                                    <br>
+                                    <button class="button" id="close_btn">OK</button>
+                                </div>
+                            </div>
                             <div class="contact_information">
+                                <a class="anchor" id="contact"></a>
                                 <h3 class="information_title">Contact information</h3>
                                 <p class="informaion_description">Quisque hendrerit purus dapibus, ornare nibh vitae,
                                     viverra
@@ -318,5 +326,5 @@
         </div>
     </div>
 </footer>
-
+<script src="./script.js"></script>
 </html>

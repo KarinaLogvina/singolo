@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     border: 0;
+    scroll-behavior: smooth;
 }
+
 
 a {
     text-decoration: none;
@@ -13,7 +15,8 @@ header {
     background-color: #2d303a;
     width: 100%;
     height: 89px;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
     box-shadow: 0px 6px 0px 0px rgba(50,55,70,1);
 }
@@ -60,9 +63,6 @@ header {
     width: 390px;
     height: 100%;
 }
-.nav_item:first-child {
-    color: #F06C64;
-}
 .nav_item:first-child::before {
     content: "";
 }
@@ -99,6 +99,16 @@ header {
 .nav_item:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     color: #f48c8f;
+    cursor: pointer;
+}
+
+.active {
+    color: #d6564f;
+}
+
+.nav_item:not(.active):hover {
+    cursor: pointer;
+    color: #F06C64;
 }
 
 main {
@@ -119,19 +129,19 @@ main {
 }
 
 
-.item-container {
+.slider-container {
     position: relative;
     width: 1020px;
     overflow: hidden;
 }
 
-.item {
+.slider {
     display: none;
     position: relative;
     margin: 0 auto;
 }
 
-.item.active,
+.slider,
 .item.next {
     display: block;
 }
@@ -179,16 +189,35 @@ main {
     margin: 0 auto;
     justify-content: space-between;
     text-align: justify;
+    background-color: #F06C64;
+    height: 600px;
 }
 
 .vertical {
-    margin-top: 44px;
-    margin-left: 110px;
+    width: 240px;
+    height: 483px;
+    margin-top: 53px;
+    margin-left: 112px;
+    background-image: url(./assets/icons/iPhone\ Vertical.png);
+    cursor: pointer;
+    user-select: none;
 }
 
 .horizontal {
-    margin-top: 143px;
-    margin-right: 88px;
+    height: 240px;
+    width: 483px;
+    margin-top: 174px;
+    margin-right: 112px;
+    cursor: pointer;
+    background-image: url(./assets/icons/iPhone\ Horizontal.png);
+    user-select: none;
+}
+
+#vertical-fill {
+    margin: 65px 0 0 14px;
+}
+#horizontal-fill {
+    margin: 14px 0 0 60px;
 }
 
 .services-block {
@@ -350,6 +379,13 @@ ul {
     box-shadow: inset 0 -6px 0 0 rgba(50, 55, 70, 1);
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -79px;
+    visibility: hidden;
+}
+
 .portfolio_container {
     width: 1020px;
     margin: 0 auto;
@@ -385,7 +421,8 @@ ul {
     margin: 9px 0px 0px 41px;
 }
 
-.tag {
+.tag,
+.tag:not(.active) {
     cursor: pointer;
     font-size: 12px;
     color: #767e9e;
@@ -412,15 +449,17 @@ ul {
 }
 
 .tag.all {
-    color: #dedede;
-    border-color: #dedede;
     border-width: 1px;
 }
 
-.tag:hover {
+.tag:hover,
+.tag.active {
     color: #dedede;
     border-color: #dedede;
-    text-decoration: underline;
+}
+
+button:focus {
+    outline: none;
 }
 
 .portfolio_img {
@@ -432,13 +471,13 @@ ul {
     margin: 18px 0px 0 40px;
     border-width: 1px;
 }
-.portfolio_column {
+.imges {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-}
-.portfolio_column:nth-child(n+5) {
-    display: none;
+    flex-direction: row;
+    height: 621px;
+    width: 940px;
+    flex-wrap: wrap;
 }
 
 .img_item {
@@ -446,8 +485,10 @@ ul {
     height: 187px;
 }
 
-.img_item:nth-child(n+4) {
-    display: none;
+.img_item.selected {
+    border: 5px solid #F06C64;
+    width: 210px;
+    height: 177px;
 }
 
 .img_1 {
@@ -457,52 +498,52 @@ ul {
 
 .img_2 {
     background-image: url(./assets/icons/img_2.png);
-    background-position: -10px -16px;
+    background-position: -82px -43px;
 }
 
 .img_3 {
     background-image: url(./assets/icons/img_3.png);
-    background-position: -16px -2px;
+    background-position: -11px -1px;
 }
 
 .img_4 {
     background-image: url(./assets/icons/img_4.png);
-    background-position: -82px -43px;
+    background-position: -24px -2px;
 }
 
 .img_5 {
     background-image: url(./assets/icons/img_5.png);
-    background-position: -16px -4px;
+    background-position: -10px -16px;
 }
 
 .img_6 {
     background-image: url(./assets/icons/img_6.png);
-    background-position: -141px -113px;
+    background-position: -16px -4px;
 }
 
 .img_7 {
     background-image: url(./assets/icons/img_7.png);
-    background-position: -261px -1px;
+    background-position: -31px -39px;
 }
 
 .img_8 {
     background-image: url(./assets/icons/img_8.png);
-    background-position: -31px -39px;
+    background-position: -24px -32px;
 }
 
 .img_9 {
     background-image: url(./assets/icons/img_9.png);
-    background-position: 270px 237px;
+    background-position: 238px 189px;
 }
 
 .img_10 {
     background-image: url(./assets/icons/img_10.png);
-    background-position: -24px -2px;
+    background-position: -141px -113px;
 }
 
 .img_11 {
     background-image: url(./assets/icons/img_11.png);
-    background-position: -24px -32px;
+    background-position: -144px -175px;
 }
 
 .img_12 {
@@ -719,6 +760,27 @@ textarea {
     font-weight: 400;
     margin-top: 10px;
     text-align: center;
+}
+#message_block {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0008;
+}
+
+#message_block.hidden {
+    display: none;
+}
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #d6564f;
+    text-align: center;
+    z-index: 1;
 }
 
 .button:hover {
