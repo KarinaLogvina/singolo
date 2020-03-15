@@ -116,67 +116,74 @@ main {
     background-color: #F06C64;
 }
 
-.carusel {
+
+/*Slider*/
+
+.slider {
     position: relative;
-    top: 302.5px;
+    width: 100%;
+    height: 574px;
+}
+.carousel {
+    position: absolute;
+    top: 50%;
     left: 50%;
+    width: 100%;
     text-align: center;
     transform: translate(-50%, -50%);
     background-color: #F06C64;
-    width: 1020px;
-    height: 594px;
-    box-shadow: 0px 6px 0px 0px rgba(234,103,107,1);
 }
-
-
-.slider-container {
+  
+.items-container {
     position: relative;
-    width: 1020px;
+    width: 100%;
     overflow: hidden;
 }
 
-.slider-item {
+.item {
     display: none;
     position: relative;
+    animation: 0.5s ease-in-out;
     margin: 0 auto;
 }
 
-.slider-item
-{
+.active,
+.next {
     display: block;
 }
 
-.slider-item.next {
-    display: none;
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.controls {
-    width: 1020px;
+.description {
+    margin: 30px 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-name {
+    padding: 10px;
 }
 
 .control {
     position: absolute;
-    top: 0px;
-    bottom: 1px;
-    width: 83px;
+    top: 0;
+    bottom: 0;
+    width: 15%;
     cursor: pointer;
 }
 
-.control.left:hover,
-.control.right:hover {
-    opacity: 1;
-}
-
 .control.left {
-    right: auto;    
-    opacity: 0.3;
-    height: 100%;
+    left: 0;
+    right: auto;
 }
 
 .control.right {
+    right: 0;
     left: auto;
-    right: 15px;
-    opacity: 0.3;
 }
 
 .arrow {
@@ -184,17 +191,68 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 10px;
+    font-size: 84px;
+}
+
+.arrow.right {
+    right: 50%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+@keyframes left {
+from {
+    left: 0;
+}
+to {
+    left: -100%;
+}
+}
+
+@keyframes right {
+from {
+    left: 100%;
+}
+to {
+    left: 0;
+}
+}
+
+@media (max-width: 960px) {
+.description {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media (max-width: 640px) {
+.control > .arrow {
+    display: none;
+}
+
+.project-name {
+    display: none;
 }
 
 .description {
-    display: flex;
-    width: 1020px;
-    margin: 0 auto;
-    justify-content: space-between;
-    text-align: justify;
-    background-color: #F06C64;
-    height: 600px;
+    border: 0;
+}
 }
 
 .vertical {
@@ -214,6 +272,74 @@ main {
     background-image: url(./assets/icons/iPhone\ Horizontal.png);
     user-select: none;
 }
+
+/**
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.description {
+    display: flex;
+    width: 100%;
+    margin: 30px 20%;
+    justify-content: space-between;
+    text-align: justify;
+    background-color: #F06C64;
+}
+
+.slider-item {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider-item,
+.slider-item.next
+{
+    display: block;
+}
+
+.controls {
+    width: 100%;
+}
+
+.control {
+    position: absolute;
+    top: 0px;
+    bottom: 1px;
+    width: 83px;
+    cursor: pointer;
+}
+
+
+.control.left {
+    right: auto;    
+    opacity: 0.3;
+    height: 100%;
+}
+
+.control.right {
+    left: auto;
+    right: 15px;
+    opacity: 0.3;
+}
+.control.left:hover,
+.control.right:hover {
+    opacity: 1;
+}
+
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+
 
 .phone_button_vertical {
     position: absolute;
@@ -246,6 +372,23 @@ main {
     margin: 14px 0 0 60px;
 }
 
+@media(max-width: 768px) {
+    .description {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 375px) {
+    .arrow {
+        display: none;
+    }
+    .description {
+        border: 0;
+    }
+}
+/*
+/*Services*/
 .services-block {
     width: 100%;
     height: 500px;

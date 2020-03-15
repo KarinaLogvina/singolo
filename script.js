@@ -86,6 +86,7 @@ CLOSE_BUTTON.addEventListener('click', (event) => {
     document.getElementById('message_block').classList.add('hidden');
 });
 
+/*Slider*/
 
 
 });
