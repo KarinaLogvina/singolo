@@ -35,19 +35,24 @@
                 <div class="slider-container">
                     <div class="slider active">
                         <div class="description">
-                            <div class="vertical" id="vertical"><img src="./assets/icons/iphone_vert_fill.png" alt="vertical phone" id="vertical-fill">
+                            <div class="vertical"><img src="./assets/icons/iphone_vert_fill.png"
+                                    alt="vertical phone" id="vertical-fill">
+                                    <div class="phone_button_vertical" id="vertical"></div>
                             </div>
-                            <div class="horizontal" id="horizontal"><img src="./assets/icons/iphone_horiz_fill.png"
-                                    alt="vertical phone" id="horizontal-fill">
+                            <div class="horizontal"><img src="./assets/icons/iphone_horiz_fill.png"
+                                    alt="horizontal phone" id="horizontal-fill">
+                                    <div class="phone_button_horizontal"  id="horizontal"></div>
+
                             </div>
                         </div>
                     </div>
-                    <!--            <div class="item next">
-                    <div class="description">
-                        <div class="project_name">#</div> 
+                    <div class="item next">
+                        <div class="description">
+                            <div class="project_name">
+                                <img src="./assets/icons/Slider2.png" alt="slider">
+                            </div>
+                        </div>
                     </div>
-                </div>
--->
                 </div>
                 <div class="controls">
                     <div class="control left">
@@ -133,7 +138,7 @@
                     <a class="anchor" id="portfolio"></a>
                     <h2 class="title_portfolio">Portfolio</h2>
                     <p class="portfolio_description">
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                     </p>
                     <div class="portfolio_tags" id="tags">
                         <button class="tag all">All</button>
@@ -256,9 +261,12 @@
                         <div class="feedback">
                             <div class="feedback_form">
                                 <form action="#" id="form">
-                                    <input class="name" type="text" name="name" id="name" placeholder="Name (Required)" maxlength="30" required>
-                                    <input class="email" type="email" name="email" placeholder="Email (Required)" maxlength="30" required>
-                                    <input class="subject" type="text" name="subject" placeholder="Subject" maxlength="30">
+                                    <input class="name" type="text" name="name" id="name" placeholder="Name (Required)"
+                                        maxlength="30" required>
+                                    <input class="email" type="email" id="email" name="email"
+                                        placeholder="Email (Required)" maxlength="30" required>
+                                    <input class="subject" id="subject" type="text" name="subject" placeholder="Subject"
+                                        maxlength="30">
                                     <textarea class="textarea" name="description" id="description" cols="30" rows="10"
                                         placeholder="Describe your ptoject in detail..." maxlength="500"></textarea>
                                     <button class="button" id="submit_btn">Submit</button>
@@ -266,11 +274,11 @@
                             </div>
                             <div id="message_block" class="hidden">
                                 <div id="message" class="message">
-                                    <p>Text: <span id="result"></span></p>
+                                    <p>The letter was sent</p>
                                     <br>
-                                    <p>Teмa: <span id="theme"></span> </p>
+                                    <p> <span id="message_subject"></span></p>
                                     <br>
-                                    <p>Описание:  <span id="description"></span> </p>
+                                    <p><span id="message_description"></span> </p>
                                     <br>
                                     <button class="button" id="close_btn">OK</button>
                                 </div>
@@ -327,4 +335,5 @@
     </div>
 </footer>
 <script src="./script.js"></script>
+
 </html>

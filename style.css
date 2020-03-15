@@ -199,7 +199,6 @@ main {
     margin-top: 53px;
     margin-left: 112px;
     background-image: url(./assets/icons/iPhone\ Vertical.png);
-    cursor: pointer;
     user-select: none;
 }
 
@@ -208,9 +207,32 @@ main {
     width: 483px;
     margin-top: 174px;
     margin-right: 112px;
-    cursor: pointer;
     background-image: url(./assets/icons/iPhone\ Horizontal.png);
     user-select: none;
+}
+
+.phone_button_vertical {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 5px 0 0 86px;
+
+}
+
+.phone_button_horizontal:hover,
+.phone_button_vertical:hover {
+    cursor: pointer;
+    border: 1px solid rgba(50, 55, 70, 0.5);
+}
+
+.phone_button_horizontal {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: -120px 0px 0 7px;
+
 }
 
 #vertical-fill {
@@ -763,11 +785,12 @@ textarea {
 }
 #message_block {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 3528px;
     top: 0;
+    z-index: 1;
     left: 0;
-    background: #0008;
+    background-color: #0008;
 }
 
 #message_block.hidden {
@@ -778,9 +801,12 @@ textarea {
     position: fixed;
     top: 50%;
     left: 50%;
-    border: 2px solid #d6564f;
     text-align: center;
     z-index: 1;
+    color: #dedede;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
 }
 
 .button:hover {

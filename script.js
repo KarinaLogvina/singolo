@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
 const MENU = document.getElementById('menu');
 
 MENU.addEventListener('click', (event) => {
@@ -14,17 +15,17 @@ const PHONE_VERTICAL = document.getElementById('vertical');
 const PHONE_HORIZONTAL = document.getElementById('horizontal');
 
 PHONE_HORIZONTAL.addEventListener ('click', (event) => {
-    if (DISPLAY_HORIZONTAL.style.display == 'none') {
-        DISPLAY_HORIZONTAL.style.display = 'block';
+    if (DISPLAY_HORIZONTAL.style.opacity == '0') {
+        DISPLAY_HORIZONTAL.style.opacity = '1';
     } else {
-        DISPLAY_HORIZONTAL.style.display = 'none';
+        DISPLAY_HORIZONTAL.style.opacity = '0';
     }
 })
 PHONE_VERTICAL.addEventListener ('click', (event) => {
-    if (DISPLAY_VERTICAL.style.display == 'none') {
-        DISPLAY_VERTICAL.style.display = 'block';
+    if (DISPLAY_VERTICAL.style.opacity == '0') {
+        DISPLAY_VERTICAL.style.opacity = '1';
     } else {
-        DISPLAY_VERTICAL.style.display = 'none';
+        DISPLAY_VERTICAL.style.opacity = '0';
     }
 });
 
@@ -56,18 +57,35 @@ TAGS.addEventListener('click', (event) => {
 
 /*Форма*/
 const FORM = document.getElementById('form');
-const BUTTON = document.getElementById('submit_btn');
 const CLOSE_BUTTON = document.getElementById('close_btn');
 
-BUTTON.addEventListener('click', (event) => {
-    event.preventDefault();
-    const subject = document.getElementById('subject').value.toString();
-    document.getElementById('result').innerText = subject;
+FORM.addEventListener('submit', (event) => {
+    let subject = document.getElementById('subject').value;
+    let description = document.getElementById('description').value;
+    if (!subject) {
+        subject = 'Without subject';
+    } else {
+        subject = 'Subject: ' + subject;
+    }
+    if (!description) {
+        description = 'Without description';
+    } else {
+        description = 'Description: ' + description;
+    }
+    document.getElementById('message_subject').innerText = subject;
+    document.getElementById('message_description').innerText = description;
     document.getElementById('message_block').classList.remove('hidden');
-});
+    event.preventDefault();
+})
 
 CLOSE_BUTTON.addEventListener('click', (event) => {
-    document.getElementById('result').innerText = '';
+    document.getElementById('message_subject').innerText = '';
+    document.getElementById('message_description').innerText = '';
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
     document.getElementById('message_block').classList.add('hidden');
 });
 
+
+
+});
