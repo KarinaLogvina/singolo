@@ -135,15 +135,19 @@ main {
     overflow: hidden;
 }
 
-.slider {
+.slider-item {
     display: none;
     position: relative;
     margin: 0 auto;
 }
 
-.slider,
-.item.next {
+.slider-item
+{
     display: block;
+}
+
+.slider-item.next {
+    display: none;
 }
 
 .controls {
