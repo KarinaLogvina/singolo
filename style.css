@@ -115,7 +115,7 @@ main {
     width: 100%;
     background-color: #F06C64;
 }
-
+/*Slider*/
 .carusel {
     position: relative;
     top: 302.5px;
@@ -131,11 +131,11 @@ main {
 
 .slider-container {
     position: relative;
-    width: 1020px;
+    width: 100%;
     overflow: hidden;
 }
 
-.slider-item {
+.slider-item.hidden {
     display: none;
     position: relative;
     margin: 0 auto;
@@ -143,13 +143,20 @@ main {
 
 .slider-item
 {
+    display: none;
+    position: relative;
+    animation: 0.5s ease-in-out
+}
+
+.slider-item.next,
+.slider-item.active {
     display: block;
 }
-
-.slider-item.next {
-    display: none;
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
-
 .controls {
     width: 1020px;
 }
@@ -187,15 +194,58 @@ main {
     font-size: 10px;
 }
 
-.description {
+.slider.description {
     display: flex;
-    width: 1020px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     text-align: justify;
-    background-color: #F06C64;
-    height: 600px;
 }
+.progect-name {
+    background-image: url(./assets/icons/Slider2.png);
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+/*slider animation*/
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
 
 .vertical {
     width: 240px;
