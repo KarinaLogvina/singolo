@@ -1,3 +1,4 @@
+//Navigation//
 document.addEventListener("DOMContentLoaded", function(event) { 
 const MENU = document.getElementById('menu');
 
@@ -9,8 +10,19 @@ MENU.addEventListener('click', (event) => {
     event.target.closest('li').classList.add('active');
 });
 
+document.addEventListener('scroll', onScroll);
 
+function onScroll (event) {
+    let currentPosition = window.scrollY;
+    console.log(document.querySelector.classList('anchor'));
+    document.querySelectorAll('.anchor').forEach(el => {
+        el.getAttribute('id');
 
+        if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight > currentPosition))
+    })
+}
+
+//Phones//
 const DISPLAY_VERTICAL = document.getElementById('vertical-fill');
 const DISPLAY_HORIZONTAL = document.getElementById('horizontal-fill');
 const PHONE_VERTICAL = document.getElementById('vertical');
