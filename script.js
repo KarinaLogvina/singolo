@@ -109,7 +109,7 @@ function showItem(direction) {
 	items[currentItem].classList.add('next', direction);
 	items[currentItem].addEventListener('animationend', function() {
 		this.classList.remove('next', direction);
-		this.classList.add('active');
+        this.classList.add('active');
 		isEnabled = true;
 	});
 }

@@ -145,7 +145,8 @@ main {
 {
     display: none;
     position: relative;
-    animation: 0.5s ease-in-out
+    animation: 0.5s ease-in-out;
+    height: 600px;
 }
 
 .slider-item.next,
