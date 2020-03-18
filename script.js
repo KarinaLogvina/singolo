@@ -9,6 +9,8 @@ MENU.addEventListener('click', (event) => {
     event.target.closest('li').classList.add('active');
 });
 
+
+
 const DISPLAY_VERTICAL = document.getElementById('vertical-fill');
 const DISPLAY_HORIZONTAL = document.getElementById('horizontal-fill');
 const PHONE_VERTICAL = document.getElementById('vertical');
