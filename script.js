@@ -9,7 +9,7 @@ MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
     event.target.closest('li').classList.add('active');
 });
-
+/*
 document.addEventListener('scroll', onScroll);
 
 function onScroll (event) {
@@ -21,7 +21,7 @@ function onScroll (event) {
         if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight > currentPosition))
     })
 }
-
+*/
 //Phones//
 const DISPLAY_VERTICAL = document.getElementById('vertical-fill');
 const DISPLAY_HORIZONTAL = document.getElementById('horizontal-fill');
