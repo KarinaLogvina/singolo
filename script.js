@@ -11,18 +11,16 @@ MENU.addEventListener('click', (event) => {
 });
 
 document.addEventListener('scroll', onScroll);
+const parts = document.querySelectorAll('.anchor');
 
 function onScroll (event) {
     const currentPosition = window.scrollY;
-    const parts = document.querySelectorAll('anchor');
-    const links = document.querySelectorAll('li>a');
-    parts.forEach(el => {
-        el.getAttribute('li');
+    parts.forEach((el) => {
         if(el.offsetTop <= currentPosition && ((el.offsetTop + el.offsetHeight) > currentPosition)) {
-            links.querySelectorAll('li').forEach((a) => {
-                a.classList.remove('active');
-                if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
-                    a.classList.add('active');
+            MENU.querySelectorAll('li').forEach((li) => {
+                li.classList.remove('active');
+                if(el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
+                    li.classList.add('active');
                 }
             })
         }
