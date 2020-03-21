@@ -15,33 +15,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     function onScroll(event) {
         const currentPosition = window.scrollY;
-        const hasActiveEllement = false;
-        const previousElement = parts[0];
+        let hasActiveEllement = false;
+        let previousElement = parts[0];
         parts.forEach((el) => {
-            if (el.offsetTop < currentPosition) {
-                previousElement = el;
-            }
-            if (el.offsetTop + 79 <= currentPosition || el.offsetTop + 79 > (window.innerHeight + currentPosition)) {
-                MENU.querySelectorAll('li').forEach((li) => {
-                    if (el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
-                        li.classList.remove('active');
-                    }
-                })
-            } else {
-                MENU.querySelectorAll('li').forEach((li) => {
-                    if (el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
-                        if (!hasActiveEllement) {
+            if (!hasActiveEllement) {
+                if (el.offsetTop < currentPosition) {
+                    previousElement = el;
+                }
+                if (((el.offsetTop + 85) > currentPosition) && ((el.offsetTop + 85) < (window.innerHeight + currentPosition))) {
+                    MENU.querySelectorAll('li').forEach((li) => {
+                        if (el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
                             li.classList.add('active');
                             hasActiveEllement = true;
+                        } else {
+                            li.classList.remove('active');
                         }
-                    }
-                })
+                    })
+                }
             }
         })
+
         if (!hasActiveEllement) {
             MENU.querySelectorAll('li').forEach((li) => {
                 if (previousElement.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
                     li.classList.add('active');
+                    hasActiveEllement = true;
+                } else {
+                    li.classList.remove('active');
                 }
             })
         }
