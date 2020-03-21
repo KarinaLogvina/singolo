@@ -9,19 +9,26 @@ MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
     event.target.closest('li').classList.add('active');
 });
-/*
+
 document.addEventListener('scroll', onScroll);
 
 function onScroll (event) {
-    let currentPosition = window.scrollY;
-    console.log(document.querySelector.classList('anchor'));
-    document.querySelectorAll('.anchor').forEach(el => {
-        el.getAttribute('id');
-
-        if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight > currentPosition))
+    const currentPosition = window.scrollY;
+    const parts = document.querySelectorAll('anchor');
+    const links = document.querySelectorAll('li>a');
+    parts.forEach(el => {
+        el.getAttribute('li');
+        if(el.offsetTop <= currentPosition && ((el.offsetTop + el.offsetHeight) > currentPosition)) {
+            links.querySelectorAll('li').forEach((a) => {
+                a.classList.remove('active');
+                if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
     })
 }
-*/
+
 //Phones//
 const DISPLAY_VERTICAL = document.getElementById('vertical-fill');
 const DISPLAY_HORIZONTAL = document.getElementById('horizontal-fill');
@@ -97,6 +104,8 @@ CLOSE_BUTTON.addEventListener('click', (event) => {
     document.getElementById('message_description').innerText = '';
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
+    document.getElementById('description').value = '';
+    document.getElementById('subject').value = '';
     document.getElementById('message_block').classList.add('hidden');
 });
 /*Slider*/
