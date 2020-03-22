@@ -457,9 +457,9 @@ ul {
 
 a.anchor {
     display: block;
+    visibility: hidden;
     position: relative;
     top: -79px;
-    visibility: hidden;
 }
 
 .portfolio_container {

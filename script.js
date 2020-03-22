@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 if (el.offsetTop < currentPosition) {
                     previousElement = el;
                 }
-                if (((el.offsetTop + 85) > currentPosition) && ((el.offsetTop + 85) < (window.innerHeight + currentPosition))) {
+                if (((el.offsetTop + 85)  >= currentPosition) && ((el.offsetTop + 85) <= (window.innerHeight + currentPosition))) {
                     MENU.querySelectorAll('li').forEach((li) => {
                         if (el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
                             li.classList.add('active');
