@@ -23,7 +23,7 @@ header {
 
 .wraper {
     display: flex;
-    width: 1020px;
+    max-width: 1020px;
     margin: 0 auto;
     flex-direction: column;
     align-content: center;
@@ -32,7 +32,7 @@ header {
 
 .header-content {
     height: 100%;
-    width: 955px;
+    width: 94%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -123,7 +123,7 @@ main {
     text-align: center;
     transform: translate(-50%, -50%);
     background-color: #F06C64;
-    width: 1020px;
+    max-width: 1020px;
     height: 594px;
     box-shadow: 0px 6px 0px 0px rgba(234,103,107,1);
 }
@@ -141,8 +141,7 @@ main {
     margin: 0 auto;
 }
 
-.slider-item
-{
+.slider-item {
     display: none;
     position: relative;
     animation: 0.5s ease-in-out;
@@ -248,7 +247,7 @@ main {
 
 
 .vertical {
-    width: 240px;
+    width: 23.5%;
     height: 483px;
     margin-top: 53px;
     margin-left: 112px;
@@ -258,7 +257,7 @@ main {
 
 .horizontal {
     height: 240px;
-    width: 483px;
+    width: 47.3%;
     margin-top: 174px;
     margin-right: 112px;
     background-image: url(./assets/icons/iPhone\ Horizontal.png);
@@ -316,7 +315,7 @@ main {
 }
 
 .services_description {
-    width: 940px;
+    width: 92%;
     height: 57px;
     margin-top: 27px;
     font-size: 18px;
@@ -331,7 +330,7 @@ main {
 
 .services-content {
     position: relative;
-    width: 940px;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -481,8 +480,7 @@ a.anchor {
 
 .portfolio_description {
     font-size: 18px;
-    width: 690px;
-    height: 31px;
+    width: 68%;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
@@ -543,7 +541,7 @@ button:focus {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 601px;
-    width: 940px;
+    width: 93%;
     margin: 18px 0px 0 40px;
     border-width: 1px;
 }
@@ -552,19 +550,19 @@ button:focus {
     justify-content: space-between;
     flex-direction: row;
     height: 621px;
-    width: 940px;
+    width: 100%;
     flex-wrap: wrap;
 }
 
 .img_item {
-    width: 220px;
-    height: 187px;
+    width: 23%;
+    height: 30%;
 }
 
 .img_item.selected {
     border: 5px solid #F06C64;
-    width: 210px;
-    height: 177px;
+    width: 22%;
+    height: 29%;
 }
 
 .img_1 {
@@ -635,7 +633,7 @@ button:focus {
 }
 
 .about_container {
-    width: 1020px;
+    max-width: 1020px;
     margin: 0 auto;
 }
 
@@ -652,7 +650,7 @@ button:focus {
 }
 
 .about_us_description {
-    width: 940px;
+    width: 92%;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -673,7 +671,7 @@ button:focus {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 940px;
+    width: 92%;
     margin: 0 auto;
     margin-top: 45px;
 }
@@ -741,7 +739,7 @@ button:focus {
 }
 
 .quote_container {
-    width: 940px;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -772,7 +770,7 @@ button:focus {
 .feedback {
     display: flex;
     justify-content: space-between;
-    width: 952px;
+    width: 100%;
     margin: 33px 0 0 0;
 }
 
@@ -783,7 +781,7 @@ button:focus {
 }
 
 form input {
-    width: 604px;
+    width: 99%;
     height: 38px;
     padding-left: 15px;  
     border-radius: 5px;
@@ -802,7 +800,7 @@ form input::placeholder {
 }
 
 textarea {
-    width: 604px;
+    width: 99%;
     height: 195px;
     padding-top: 7px;
     padding-left: 15px;
@@ -877,7 +875,7 @@ textarea {
     text-decoration: underline;
 }
 .contact_information {
-    width: 322px;
+    width: 33%;
     float: left;
     margin: 14px 0 0 21px;
 }
@@ -923,7 +921,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 940px;
+    width: 92%;
 }
 
 .social_icon {
