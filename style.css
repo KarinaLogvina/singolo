@@ -14,7 +14,7 @@ a {
 header {
     background-color: #2d303a;
     width: 100%;
-    height: 89px;
+    height: 11vh;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -249,8 +249,8 @@ main {
 .vertical {
     width: 23.5%;
     height: 483px;
-    margin-top: 53px;
-    margin-left: 112px;
+    margin-top: 5%;
+    margin-left: 11%;
     background-image: url(./assets/icons/iPhone\ Vertical.png);
     user-select: none;
 }
@@ -258,8 +258,8 @@ main {
 .horizontal {
     height: 240px;
     width: 47.3%;
-    margin-top: 174px;
-    margin-right: 112px;
+    margin-top: 17%;
+    margin-right: 11%;
     background-image: url(./assets/icons/iPhone\ Horizontal.png);
     user-select: none;
 }
@@ -289,7 +289,7 @@ main {
 }
 
 #vertical-fill {
-    margin: 65px 0 0 14px;
+    margin: 30% 0 0 7%;
 }
 #horizontal-fill {
     margin: 14px 0 0 60px;
@@ -297,8 +297,8 @@ main {
 
 .services-block {
     width: 100%;
-    height: 500px;
-    margin-top: 12px;
+    height: 61vh;
+    margin-top: 1%;
     background-color: #F2F2F2;
     box-shadow: inset 0 -6px 0 0 rgba(255,255,255,1);
 }
@@ -448,8 +448,8 @@ ul {
 }
 
 .portfolio {
-    width: 100%;
-    height: 869px;
+    max-width: 100%;
+    height: 106vh;
     background-color: #2D303A;
     box-shadow: inset 0 -6px 0 0 rgba(50, 55, 70, 1);
 }
@@ -462,7 +462,7 @@ a.anchor {
 }
 
 .portfolio_container {
-    width: 1020px;
+    max-width: 1020px;
     margin: 0 auto;
 }
 
@@ -540,7 +540,6 @@ button:focus {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 601px;
     width: 93%;
     margin: 18px 0px 0 40px;
     border-width: 1px;
@@ -548,8 +547,7 @@ button:focus {
 .imges {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    height: 621px;
+    height: 76vh;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -852,13 +850,21 @@ textarea {
 .message {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 25%;
+    right: 25%;
     text-align: center;
     z-index: 1;
     color: #dedede;
     text-align: left;
     font-family: "Lato", sans-serif;
     font-size: 18px;
+    border: 1px solid red;
+    background-color: #2D303A;
+}
+
+.message p {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .button:hover {
@@ -982,3 +988,10 @@ li.email {
     background-image: url(./assets/icons/LinkedIn.svg);
 }
 
+
+@media (max-width: 769px) {
+    .img_item:nth-child(4n+4) {
+        margin-right: 0;
+        float: right;
+    }
+}
