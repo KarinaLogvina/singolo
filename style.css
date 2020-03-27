@@ -22,12 +22,8 @@ header {
 }
 
 .wraper {
-    display: flex;
     max-width: 1020px;
     margin: 0 auto;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
 }
 
 .header-content {
@@ -289,7 +285,7 @@ main {
 }
 
 #vertical-fill {
-    margin: 30% 0 0 7%;
+    margin: 27% 0 0 6%;
 }
 #horizontal-fill {
     margin: 14px 0 0 60px;
@@ -440,11 +436,6 @@ main {
 
 ul {
     list-style: none;
-}
-
-.wraper {
-    width: 100%;
-    margin: 0 auto;
 }
 
 .portfolio {
@@ -660,8 +651,8 @@ button:focus {
 }
 
 .member {
-    width: 300px;
-    height: 515px;
+    width: 32%;
+    height: 30%;
     overflow: hidden;
 }
 
@@ -676,8 +667,8 @@ button:focus {
 
 .member_name {
     font-size: 18px;
-    margin: 17px 0 0 0;
-    width: 300px;
+    margin: 4% 0 0 0;
+    width: 100%;
     line-height: 18px;
     text-overflow: ellipsis;
     color: #666d89;
@@ -685,12 +676,10 @@ button:focus {
     white-space: nowrap;
     font-family: "Lato Black";
     font-weight: 900;
-    height: 20px;
 }
 
 .member_photo {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     overflow: hidden;
 }
 
