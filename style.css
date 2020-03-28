@@ -293,7 +293,7 @@ main {
 
 .services-block {
     width: 100%;
-    height: 61vh;
+    padding-bottom: 6%;
     margin-top: 1%;
     background-color: #F2F2F2;
     box-shadow: inset 0 -6px 0 0 rgba(255,255,255,1);
@@ -332,7 +332,7 @@ main {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 29px;
 }
@@ -346,92 +346,30 @@ main {
 
 .cards_name {
     font-size: 18px;
-    margin-top: -1px;
     line-height: 18px;
     color: #666d89;
     letter-spacing: 0px;
     font-family: "Lato-bold", sans-serif;
     text-align: left;
+    width: 100%;
+    margin-left: 24%;
+    margin-bottom: 1%;
 }
 
 .cards_fill {
     font-size: 12px;
     line-height: 22px;
-    margin-top: 10px;
     letter-spacing: 0.1px;
     color: #767e9e;
     font-family: "Lato", sans-serif;
     text-align: justify;
+    width: 71%;
+    margin-left: 24%;
 }
 
 .cards_image {
     position: absolute;
 
-}
-
-.cards_fill,
-.cards_name {
-    margin-left: 80px;
-}
-
-.cards_bulb {
-    margin-left: 4px;
-}
-.cards_name_bulb {
-    margin-left: 85px;
-    letter-spacing: 0.2px;
-}
-.cards_fill_ideas {
-    margin-left: 85px;
-    letter-spacing: 0.1px;
-}
-
-.cards_heart {
-    margin-left: 9px;
-}
-.cards_name_love {
-    margin-left: 91.5px;
-}
-.cards_fill_love {
-    margin-left: 90.5px;
-}
-.cards_phone {
-    margin-top: 3px;
-}
-.cards_name_responsive {
-    margin-left: 81px;
-    margin-top: 2px;
-    letter-spacing: 0.1px;
-}
-.cards_fill_responsive {
-    margin-left: 80.9px;
-}
-
-.card_bubble {
-    margin-left: 4px;
-    margin-top: 3px;
-}
-.cards_name_support {
-    margin-left: 84px;
-    margin-top: 2.1px;
-    letter-spacing: 0.5px;
-}
-.cards_fill_support {
-    margin-left: 85.7px;
-    margin-top: 9.9px;
-}
-.card_star {
-    margin-left: 9px;
-    margin-top: 3px;
-}
-.cards_name_star {
-    margin-left: 91px;
-    margin-top: 2.1px;
-    letter-spacing: 0.1px;
-}
-.cards_fill_star {
-    margin-left: 90.2px;
-    margin-top: 9.9px;
 }
 
 ul {
