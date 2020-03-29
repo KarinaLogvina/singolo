@@ -504,8 +504,8 @@ button:focus {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 93%;
-    margin: 18px 0px 0 40px;
+    width: 98%;
+    /* margin: 18px 0px 0 40px; */
     border-width: 1px;
 }
 .imges {
@@ -719,7 +719,6 @@ button:focus {
 }
 
 .quote_description {
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
