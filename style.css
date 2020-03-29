@@ -532,62 +532,50 @@ button:focus {
 
 .img_1 {
     background-image: url(./assets/icons/img_1.png);
-    background-position: -7.6px -11.3px;
 }
 
 .img_2 {
     background-image: url(./assets/icons/img_2.png);
-    background-position: -82px -43px;
 }
 
 .img_3 {
     background-image: url(./assets/icons/img_3.png);
-    background-position: -11px -1px;
 }
 
 .img_4 {
     background-image: url(./assets/icons/img_4.png);
-    background-position: -24px -2px;
 }
 
 .img_5 {
     background-image: url(./assets/icons/img_5.png);
-    background-position: -10px -16px;
 }
 
 .img_6 {
     background-image: url(./assets/icons/img_6.png);
-    background-position: -16px -4px;
 }
 
 .img_7 {
     background-image: url(./assets/icons/img_7.png);
-    background-position: -31px -39px;
 }
 
 .img_8 {
     background-image: url(./assets/icons/img_8.png);
-    background-position: -24px -32px;
 }
 
 .img_9 {
     background-image: url(./assets/icons/img_9.png);
-    background-position: 238px 189px;
 }
 
 .img_10 {
     background-image: url(./assets/icons/img_10.png);
-    background-position: -141px -113px;
 }
 
 .img_11 {
     background-image: url(./assets/icons/img_11.png);
-    background-position: -144px -175px;
 }
 
 .img_12 {
     background-image: url(./assets/icons/img_12.png);
-    background-position: -36px -60px;
 }
 
 .about_us {
@@ -955,15 +943,14 @@ li.email {
 .linkedin {
     background-image: url(./assets/icons/LinkedIn.svg);
 }
-/*
 
-@media (max-width: 769px) {
-    .img_item:nth-child(4n+4) {
-        margin-right: 0;
-        float: right;
+
+@media (max-width: 767px) {
+    .img_item:nth-child(n+7) {
+        display: none;
     }
 }
-*/
+
 @media (min-width: 1020px) {
     .carusel {
         top: 300.5px;;
@@ -998,6 +985,7 @@ li.email {
     .contact_information {
         width: 98%;
     }
+
 
     .burger_button {
         display: block;
@@ -1052,8 +1040,19 @@ li.email {
     }
 
     .img_item {
-        margin-top: 14px;
+        max-width: 217px;
+        max-height: 180px;
+        height: 34vw;
+        width: 40vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 15px 0 0 15px;
     }
+
+    .portfolio {
+        padding-bottom: 45px;
+    }
+    
 
     .member_board {
         flex-direction: column;
