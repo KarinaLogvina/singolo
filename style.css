@@ -59,6 +59,10 @@ header {
     width: 390px;
     height: 100%;
 }
+
+.burger_button {
+    display: none;
+}
 .nav_item:first-child::before {
     content: "";
 }
@@ -204,12 +208,16 @@ main {
     height: 58.9vw;
     max-width: 100%;
 }
-.progect-name {
+.project-name {
     background-image: url(./assets/icons/Slider2.png);
     max-height: 600px;
     max-width: 1020px;
     width: 103vw;
     height: 62vw;
+}
+
+.project-name-img {
+    width: 100%;
 }
 
 
@@ -264,9 +272,9 @@ main {
 
 .horizontal {
     max-height: 240px;
-    height: 26vw;
+    height: 24vw;
     max-width: 480px;
-    width: 49vw;
+    width: 48vw;
     margin-top: 17%;
     margin-right: 11%;
     background-image: url(./assets/icons/iPhone\ Horizontal.png);
@@ -299,7 +307,6 @@ main {
     border-radius: 50%;
     margin: -11.8% 0 0 0.8%;
     height: 4vw;
-    border: 1px solid red;
 }
 
 #vertical-fill {
@@ -313,8 +320,8 @@ main {
     margin: 3% 0 0 12.6%;
     max-width: 333px;
     max-height: 188px;
-    width: 36.5vw;
-    height: 20.6vw;
+    width: 33.2vw;
+    height: 18.7vw;
 }
 
 .services-block {
@@ -403,10 +410,12 @@ ul {
 }
 
 .portfolio {
+    width: 100vw;
     max-width: 100%;
-    height: 106vh;
+    height: 100%;
     background-color: #2D303A;
     box-shadow: inset 0 -6px 0 0 rgba(50, 55, 70, 1);
+    padding-bottom: 78px;
 }
 
 a.anchor {
@@ -443,7 +452,7 @@ a.anchor {
     letter-spacing: -0.2px;
     text-align: justify;
     overflow: hidden;
-    margin: 27px 0 0 40px;
+    margin: 13px 0 0 43px;
 }
 
 .portfolio_tags {
@@ -501,22 +510,25 @@ button:focus {
 }
 .imges {
     display: flex;
-    justify-content: space-between;
-    height: 76.8vh;
+    justify-content: center;
+   /* height: 76.8vh;*/
     width: 92.2vw;
     max-width: 1020px;
     flex-wrap: wrap;
 }
 
 .img_item {
-    width: 23%;
-    height: 30%;
+    max-height: 180px;
+    max-width: 220px;
+    height: 60vw;
+    width: 115vw;
+    margin: 20px 0px 0 15px;
 }
 
 .img_item.selected {
-    border: 5px solid #F06C64;
-    width: 22%;
-    height: 29%;
+    outline: 5px solid #F06C64;
+    height: 60vw;
+    width: 115vw;
 }
 
 .img_1 {
@@ -616,16 +628,14 @@ button:focus {
 }
 
 .member {
-    width: 32%;
-    height: 30%;
+    width: 31.3vw;
     overflow: hidden;
 }
 
 .member_board {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 92%;
+    justify-content: center;
+    width: 98%;
     margin: 0 auto;
     margin-top: 45px;
 }
@@ -646,10 +656,6 @@ button:focus {
 .member_photo {
     width: 100%;
     overflow: hidden;
-}
-
-.center  {
-    width: 302px;
 }
 
 .member_info {
@@ -686,7 +692,6 @@ button:focus {
 .quote {
     width: 100%;
     background-color: #F06C64;
-    height: 654px;
     box-shadow: inset 0 -6px 0 0 rgba(234, 103, 107, 1);
 }
 
@@ -941,7 +946,7 @@ li.email {
 .linkedin {
     background-image: url(./assets/icons/LinkedIn.svg);
 }
-
+/*
 
 @media (max-width: 769px) {
     .img_item:nth-child(4n+4) {
@@ -949,7 +954,7 @@ li.email {
         float: right;
     }
 }
-
+*/
 @media (min-width: 1020px) {
     .carusel {
         top: 302.5px;;
@@ -966,4 +971,72 @@ li.email {
 
 @media (max-width: 1019px) and (min-width: 768px) {
 
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .feedback {
+        flex-direction: column;
+    }
+
+    .feedback_form {
+        width: 92%;
+    }
+
+    .contact_information {
+        width: 92%;
+    }
+
+    .burger_button {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 20px;
+        top: 37px;
+        width: 25px;
+        height: 20px;
+        margin: auto 0;
+        animation: 0.5s ease-in;
+        margin: -1% 0 0 4%;
+    }
+    header {
+        height: 71px;
+    }
+   .nav_menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 62vw;
+        height: 100%;
+        background-color: #2D303A;
+        z-index: 3;
+        padding: 0 0;
+        margin-top: 72px;
+
+    }
+
+    .nav_item {
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .logo_name {
+        margin: 36px 0 0 30vw;
+    }
+
+    .member_board {
+        flex-direction: column;
+    }
+
+    .burger__button {
+        display: block;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    footer.socials {
+        margin-left: 35vw;
+    }
 }
