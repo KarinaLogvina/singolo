@@ -802,7 +802,7 @@ textarea {
 #message_block {
     position: absolute;
     width: 100%;
-    height: 3528px;
+    height: 3518px;
     top: 0;
     z-index: 1;
     left: 0;
@@ -824,7 +824,9 @@ textarea {
     text-align: left;
     font-family: "Lato", sans-serif;
     font-size: 18px;
-    border: 1px solid red;
+    border-radius: 0%;
+    padding: 10px 10px 10px 10px;
+    /* border: 1px solid red; */
     background-color: #2D303A;
 }
 
@@ -964,7 +966,7 @@ li.email {
 */
 @media (min-width: 1020px) {
     .carusel {
-        top: 302.5px;;
+        top: 300.5px;;
     }
 
     .slider.description {
@@ -1012,20 +1014,21 @@ li.email {
     header {
         height: 71px;
     }
-   .nav_menu {
+    .nav_menu {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
-        width: 62vw;
+        width: 42vw;
         height: 100%;
         background-color: #2D303A;
         z-index: 3;
         padding: 0 0;
-        margin-top: 72px;
-
+        padding-left: 33px;
+        margin-top: 76px;
+        padding-top: 82px;
     }
 
     .nav_menu.hidden {
@@ -1035,10 +1038,15 @@ li.email {
     .about_us_description {
         margin: 25px 0 0 16px;
     }
-
     .nav_item {
         align-items: center;
         margin-left: 40px;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .nav_item::before {
+        display: none;
     }
 
     .logo_name {
