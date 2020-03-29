@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const MENU = document.getElementById('menu');
 
     MENU.addEventListener('click', (event) => {
+        if(!MENU.classList.contains('hidden')) {
+            MENU.classList.add('hidden');
+            burger.removeAttribute('style');
+        }
         if (event.target.tagName == 'li') {
             return;
         }

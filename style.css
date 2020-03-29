@@ -427,7 +427,7 @@ a.anchor {
 
 .portfolio_container {
     max-width: 1020px;
-    margin: 0 auto;
+    margin-left: 15px;
 }
 
 .title_portfolio {
@@ -439,12 +439,12 @@ a.anchor {
     text-align: left;
     letter-spacing: 0.3px;
     padding-top: 69px;
-    margin-left: 39.4px;
+    margin-left: 24px;
 }
 
 .portfolio_description {
     font-size: 18px;
-    width: 68%;
+    width: 92%;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
@@ -452,11 +452,11 @@ a.anchor {
     letter-spacing: -0.2px;
     text-align: justify;
     overflow: hidden;
-    margin: 30px 0 0 43px;
+    margin: 30px 0 0 24px;
 }
 
 .portfolio_tags {
-    margin: 9px 0px 0px 41px;
+    margin: 9px 0px 0px 27px;
 }
 
 .tag,
@@ -511,7 +511,6 @@ button:focus {
 .imges {
     display: flex;
     justify-content: center;
-    margin-left: 15px;
     width: 95vw;
     max-width: 1020px;
     flex-wrap: wrap;
@@ -1002,13 +1001,11 @@ li.email {
 
     .burger_button {
         display: block;
-        position: relative;
-        width: 25px;
-        height: 20px;
+        position: absolute;
+        z-index: 2;
         top: 37px;
         width: 25px;
         height: 20px;
-        margin: auto 0;
         animation: 0.5s ease-in;
         margin: -1% 0 0 4%;
     }
@@ -1022,13 +1019,14 @@ li.email {
         position: fixed;
         top: 0;
         left: 0;
-        width: 51vw;
+        width: 278px;
         height: 100%;
         background-color: #2D303A;
-        z-index: 3;
+        z-index: 1;
         padding: 0 0;
+        margin-top: 0;
         padding-left: 19%;
-        margin-top: 76px;
+        /* margin-top: 76px; */
         padding-top: 82px;
     }
 
@@ -1053,6 +1051,10 @@ li.email {
         margin: 36px 0 0 30vw;
     }
 
+    .img_item {
+        margin-top: 14px;
+    }
+
     .member_board {
         flex-direction: column;
         align-items: center;
@@ -1074,8 +1076,11 @@ li.email {
         display: none;
     }
 
+    .footer_content {
+        width: 100%;
+    }
     footer .socials {
-        margin-left: 35vw;
+        margin-left: 39vw;
     }
 
     .portfolio_tags, 
@@ -1089,6 +1094,10 @@ li.email {
 
     .button {
         width: 102%;
+    }
+
+    .title_about_us {
+        padding-left: 16px;
     }
 }
 
