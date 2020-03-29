@@ -1080,7 +1080,9 @@ li.email {
         width: 100%;
     }
     footer .socials {
-        margin-left: 39vw;
+        margin-top: 40px;
+        margin: 0 auto;
+        padding: 18px;
     }
 
     .portfolio_tags, 
