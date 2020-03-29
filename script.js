@@ -183,14 +183,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     /*Burger menu*/ 
     const burger = document.getElementById('burger_button');
+    const logo = document.getElementById('logo');
 
     burger.addEventListener('click', (event) => {
         if (MENU.classList.contains('hidden')) {
             MENU.classList.remove('hidden');
             burger.setAttribute('style', 'transform: rotate(90deg)');
+            logo.style.left = '13%';
         } else {
             MENU.classList.add('hidden');
             burger.removeAttribute('style');
+            logo.removeAttribute('style')
         }
     });
 });

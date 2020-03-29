@@ -946,7 +946,7 @@ li.email {
 
 
 @media (max-width: 767px) {
-    .img_item:nth-child(n+7) {
+    .img_item:nth-child(n+9) {
         display: none;
     }
 }
@@ -1036,7 +1036,10 @@ li.email {
     }
 
     .logo_name {
-        margin: 36px 0 0 30vw;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 40%;
     }
 
     .img_item {
