@@ -415,7 +415,7 @@ ul {
     height: 100%;
     background-color: #2D303A;
     box-shadow: inset 0 -6px 0 0 rgba(50, 55, 70, 1);
-    padding-bottom: 78px;
+    padding-bottom: 92px;
 }
 
 a.anchor {
@@ -594,7 +594,6 @@ button:focus {
 .about_us {
     width: 100%;
     background-color: #F2F2F2;
-    height: 734px;
     box-shadow: inset 0 -6px 0 0 rgba(255, 255, 255, 1)
 }
 
@@ -628,8 +627,9 @@ button:focus {
 }
 
 .member {
-    width: 31.3vw;
+
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .member_board {
@@ -654,12 +654,18 @@ button:focus {
 }
 
 .member_photo {
-    width: 100%;
+    max-width: 314px;
     overflow: hidden;
+    margin-right: 12px;
+}
+
+.member_photo img {
+    width: 100%;
 }
 
 .member_info {
-    width: 300px;
+    max-width: 300px;
+    width: 95%;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -693,6 +699,7 @@ button:focus {
     width: 100%;
     background-color: #F06C64;
     box-shadow: inset 0 -6px 0 0 rgba(234, 103, 107, 1);
+    padding-bottom: 19px;
 }
 
 .quote_container {
@@ -974,16 +981,20 @@ li.email {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    *{
+        max-width: 767px;
+    }
+
     .feedback {
         flex-direction: column;
     }
 
     .feedback_form {
-        width: 92%;
+        width: 98%;
     }
 
     .contact_information {
-        width: 92%;
+        width: 98%;
     }
 
     .burger_button {
@@ -1026,8 +1037,14 @@ li.email {
 
     .member_board {
         flex-direction: column;
+        align-items: center;
+        max-width: 314px;
+        width: 59vw;
     }
 
+    .contact_information {
+        margin: 14px 0 0 5px;
+    }
     .burger__button {
         display: block;
     }
@@ -1038,5 +1055,11 @@ li.email {
 
     footer.socials {
         margin-left: 35vw;
+    }
+}
+
+@media (max-width: 319px) {
+    * {
+        margin-left: 5px;
     }
 }
