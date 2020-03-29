@@ -529,8 +529,6 @@ button:focus {
 
 .img_item.selected {
     outline: 5px solid #F06C64;
-    height: 60vw;
-    width: 115vw;
 }
 
 .img_1 {
@@ -1056,8 +1054,7 @@ li.email {
     }
 
     .img_item.selected {
-        height: 34vw;
-        width: 40vw;
+        outline: 5px solid #F06C64;
     }
 
     .portfolio {
