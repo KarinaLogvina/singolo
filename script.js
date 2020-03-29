@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if(!MENU.classList.contains('hidden')) {
             MENU.classList.add('hidden');
             burger.removeAttribute('style');
+            document.querySelector('.shadowed-cover').classList.remove('active');
         }
         if (event.target.tagName == 'li') {
             return;
@@ -190,10 +191,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             MENU.classList.remove('hidden');
             burger.setAttribute('style', 'transform: rotate(90deg)');
             logo.style.left = '13%';
+            document.querySelector('.shadowed-cover').classList.toggle('active');
         } else {
             MENU.classList.add('hidden');
             burger.removeAttribute('style');
-            logo.removeAttribute('style')
+            logo.removeAttribute('style');
+            document.querySelector('.shadowed-cover').classList.remove('active')
         }
     });
 });

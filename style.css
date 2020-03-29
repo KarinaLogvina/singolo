@@ -454,6 +454,9 @@ a.anchor {
     overflow: hidden;
     margin: 30px 0 0 24px;
 }
+.shadowed-cover{
+    display: none;
+}
 
 .portfolio_tags {
     margin: 9px 0px 0px 27px;
@@ -1015,7 +1018,7 @@ li.email {
         margin-top: 0;
         padding-left: 19%;
         /* margin-top: 76px; */
-        padding-top: 82px;
+        padding-top: 160px;
     }
 
     .nav_menu.hidden {
@@ -1027,7 +1030,7 @@ li.email {
     }
     .nav_item {
         align-items: center;
-        font-size: 25px;
+        font-size: 18px;
         margin-top: 20px;
     }
 
@@ -1103,10 +1106,18 @@ li.email {
     .title_about_us {
         padding-left: 16px;
     }
-}
 
-@media (max-width: 319px) {
-    * {
-        margin-left: 5px;
+   .shadowed-cover{
+        background: #2D303A;
+        opacity: 0.6;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+    .shadowed-cover.active{
+        display: block;
+        top: 0;
+        left: 0;
     }
 }
