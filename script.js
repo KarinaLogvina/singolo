@@ -183,8 +183,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     burger.addEventListener('click', (event) => {
         if (MENU.classList.contains('hidden')) {
             MENU.classList.remove('hidden');
+            burger.setAttribute('style', 'transform: rotate(90deg)');
         } else {
             MENU.classList.add('hidden');
+            burger.removeAttribute('style');
         }
     });
 });
