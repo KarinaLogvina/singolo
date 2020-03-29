@@ -1055,6 +1055,11 @@ li.email {
         margin: 15px 0 0 15px;
     }
 
+    .img_item.selected {
+        height: 34vw;
+        width: 40vw;
+    }
+
     .portfolio {
         padding-bottom: 45px;
     }
