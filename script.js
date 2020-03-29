@@ -176,4 +176,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
             nextItem(currentItem);
         }
     });
+
+    /*Burger menu*/ 
+    const burger = document.getElementById('burger_button');
+
+    burger.addEventListener('click', (event) => {
+        if (MENU.classList.contains('hidden')) {
+            MENU.classList.remove('hidden');
+        } else {
+            MENU.classList.add('hidden');
+        }
+    });
 });

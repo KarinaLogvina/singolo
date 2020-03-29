@@ -452,7 +452,7 @@ a.anchor {
     letter-spacing: -0.2px;
     text-align: justify;
     overflow: hidden;
-    margin: 13px 0 0 43px;
+    margin: 30px 0 0 43px;
 }
 
 .portfolio_tags {
@@ -511,18 +511,18 @@ button:focus {
 .imges {
     display: flex;
     justify-content: center;
-   /* height: 76.8vh;*/
-    width: 92.2vw;
+    margin-left: 15px;
+    width: 95vw;
     max-width: 1020px;
     flex-wrap: wrap;
 }
 
 .img_item {
-    max-height: 180px;
+    max-height: 187px;
     max-width: 220px;
     height: 60vw;
     width: 115vw;
-    margin: 20px 0px 0 15px;
+    margin: 20px 0px 0 20px;
 }
 
 .img_item.selected {
@@ -638,6 +638,7 @@ button:focus {
     width: 98%;
     margin: 0 auto;
     margin-top: 45px;
+ /*   margin-left: 17px;*/
 }
 
 .member_name {
@@ -1012,7 +1013,9 @@ li.email {
         height: 71px;
     }
    .nav_menu {
-        display: none;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
@@ -1023,6 +1026,14 @@ li.email {
         padding: 0 0;
         margin-top: 72px;
 
+    }
+
+    .nav_menu.hidden {
+        display: none;
+    }
+
+    .about_us_description {
+        margin: 25px 0 0 16px;
     }
 
     .nav_item {
@@ -1038,7 +1049,10 @@ li.email {
         flex-direction: column;
         align-items: center;
         max-width: 314px;
-        width: 59vw;
+        width: 314px;
+    }
+    .member {
+        margin-left: 5px;
     }
 
     .contact_information {
@@ -1052,8 +1066,17 @@ li.email {
         display: none;
     }
 
-    footer.socials {
+    footer .socials {
         margin-left: 35vw;
+    }
+
+    .portfolio_tags, 
+    .portfolio_description {
+        margin: 9px 0px 0px 5.8vw;
+    }
+
+    .title_portfolio  {
+        margin: 0px 0px 0px 5.8vw;
     }
 }
 
