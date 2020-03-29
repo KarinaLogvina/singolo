@@ -114,13 +114,14 @@ main {
 /*Slider*/
 .carusel {
     position: relative;
-    top: 302.5px;
+    top: 29.2vw;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
     background-color: #F06C64;
     max-width: 1020px;
-    height: 594px;
+    height: 58vw;
+    max-height: 594px;
     box-shadow: 0px 6px 0px 0px rgba(234,103,107,1);
 }
 
@@ -129,6 +130,7 @@ main {
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: 59vw;
 }
 
 .slider-item.hidden {
@@ -141,7 +143,8 @@ main {
     display: none;
     position: relative;
     animation: 0.5s ease-in-out;
-    height: 600px;
+    max-height: 600px;
+    height: 59vh;
 }
 
 .slider-item.next,
@@ -161,7 +164,8 @@ main {
     position: absolute;
     top: 0px;
     bottom: 1px;
-    width: 83px;
+    max-width: 83px;
+    width: 9vw;
     cursor: pointer;
 }
 
@@ -178,7 +182,8 @@ main {
 
 .control.right {
     left: auto;
-    right: 15px;
+    margin-right: 1%;
+    right: 0;
     opacity: 0.3;
 }
 
@@ -196,11 +201,15 @@ main {
     margin: 0 auto;
     justify-content: space-between;
     text-align: justify;
+    height: 58.9vw;
+    max-width: 100%;
 }
 .progect-name {
     background-image: url(./assets/icons/Slider2.png);
-    width: 100%;
-    margin: 0 auto;
+    max-height: 600px;
+    max-width: 1020px;
+    width: 103vw;
+    height: 62vw;
 }
 
 
@@ -240,33 +249,40 @@ main {
     }
 }
 
-
-
 .vertical {
-    width: 23.5%;
-    height: 483px;
+    width: 24vw;
+    max-height: 483px;
+    max-width: 240px;
+    height: 48vw;
     margin-top: 5%;
     margin-left: 11%;
     background-image: url(./assets/icons/iPhone\ Vertical.png);
     user-select: none;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .horizontal {
-    height: 240px;
-    width: 47.3%;
+    max-height: 240px;
+    height: 26vw;
+    max-width: 480px;
+    width: 49vw;
     margin-top: 17%;
     margin-right: 11%;
     background-image: url(./assets/icons/iPhone\ Horizontal.png);
     user-select: none;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .phone_button_vertical {
     position: absolute;
-    width: 42px;
-    height: 42px;
+    max-width: 42px;
+    max-height: 42px;
+    width: 4vw;
     border-radius: 50%;
-    margin: 5px 0 0 86px;
-
+    margin: 0.6% 0 0 8.6%;
+    height: 4vw;
 }
 
 .phone_button_horizontal:hover,
@@ -277,18 +293,28 @@ main {
 
 .phone_button_horizontal {
     position: absolute;
-    width: 42px;
-    height: 42px;
+    max-width: 42px;
+    max-height: 42px;
+    width: 4vw;
     border-radius: 50%;
-    margin: -120px 0px 0 7px;
-
+    margin: -11.8% 0 0 0.8%;
+    height: 4vw;
+    border: 1px solid red;
 }
 
 #vertical-fill {
     margin: 27% 0 0 6%;
+    max-width: 188px;
+    max-height: 333px;
+    width: 19vw;
+    height: 33.2vw;
 }
 #horizontal-fill {
-    margin: 14px 0 0 60px;
+    margin: 3% 0 0 12.6%;
+    max-width: 333px;
+    max-height: 188px;
+    width: 36.5vw;
+    height: 20.6vw;
 }
 
 .services-block {
@@ -476,8 +502,9 @@ button:focus {
 .imges {
     display: flex;
     justify-content: space-between;
-    height: 76vh;
-    width: 100%;
+    height: 76.8vh;
+    width: 92.2vw;
+    max-width: 1020px;
     flex-wrap: wrap;
 }
 
@@ -921,4 +948,22 @@ li.email {
         margin-right: 0;
         float: right;
     }
+}
+
+@media (min-width: 1020px) {
+    .carusel {
+        top: 302.5px;;
+    }
+
+    .slider.description {
+        max-height: 600px;
+    }
+
+    .portfolio {
+        max-height: 880px;
+    }
+}
+
+@media (max-width: 1019px) and (min-width: 768px) {
+
 }
